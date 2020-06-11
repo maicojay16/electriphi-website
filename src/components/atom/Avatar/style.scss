@@ -1,0 +1,42 @@
+img#avatar{
+    border-radius: 100px;
+}
+
+.md{
+    width: 130px;
+    height: 130px;
+}
+
+img#avatar.md.spacing{
+    margin: 10px 20px 0 0;
+}
+
+.lg{
+    width: 160px;
+    height: 160px;
+}
+
+img#avatar.lg.spacing{
+    margin: 10px 40px 0 0;
+}
+
+.sm{
+    width: 70px;
+    height: 70px;
+}
+
+
+
+.extra-lg{
+    width: 300px;
+    height: 300px;
+}
+
+img#avatar.extra-lg{
+    border-radius: 190px;
+}
+
+img#avatar.extra-lg.spacing{
+    margin: 0 30px;
+}
+

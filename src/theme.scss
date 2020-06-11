@@ -1,0 +1,73 @@
+//Color Palette
+$primaryColor: #616161;
+$secondaryColor: #1592e6;
+$tertiaryColor: #77af43;
+$lightColor: #ffffff;
+$darkColor: #3e3e3e;
+$disabled: #959393;
+$error: #e01616;
+$primaryBackground: #f1f1f1;
+
+//Typography
+$fontFamily: "Arial", sans-serif;
+$fontNormal: 12px;
+
+//Spacing
+$marginCenter: 0 auto;
+
+//Shadow
+$lightBoxShadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+
+.container{
+    margin: $marginCenter;
+    width: 85%;
+}
+  
+body{
+    margin:  0;
+    padding: 0;
+    font-family: $fontFamily;
+    background-color: $primaryBackground;
+    overflow-x: hidden;
+}
+
+
+.row{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    width: 33.3333333333%;
+    left: auto;
+    right: auto;
+}
+
+.full-width{
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        margin: $marginCenter;
+        width: 90%;
+    }
+
+    .item{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .item{
+        width: 100%;
+    }
+}
+

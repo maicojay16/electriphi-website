@@ -1,0 +1,94 @@
+.registration-page{
+    background-color: #333;
+    padding-bottom: 40px;
+    .registration-content{
+        height: 600px;
+        width: 100%;
+        display: flex;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+       .left-content{
+            background-color: #065ddc;
+            width: 40%;
+            color: #fff;
+            padding: 50px;
+            h1{
+               font-size: 30px;
+               font-weight: 500;
+               letter-spacing: 1px;
+               margin: 10px 0 10px 0;
+            }
+            p{
+                 margin: 0;
+                 font-size: 16px;
+            }
+       }
+       .right-content{
+            background-color: #fff;
+            width: 60%;
+            overflow-y: scroll;
+            .right-content-body{
+               padding: 50px 15%;
+                 .section{
+                      margin-bottom: 20px;
+                      h1.title{
+                           color: #222323;
+                           font-size: 30px;
+                           font-weight: 500;
+                           letter-spacing: 1px;
+                           margin: 10px 0 40px 0;
+                      }
+                 }
+            }
+       }
+    }   
+}
+
+
+//Registration Tablet
+@media only screen and (max-width: 768px){
+     .registration-page{
+          .registration-content {
+               flex-direction: column;
+               height: 100%;
+               .left-content{
+                    width: 80%;
+                    height: 300px;
+                    padding: 10%;
+                    p{
+                         font-size: 2vw;
+                    }
+                    h1{
+                         font-size: 4vw;
+                    }
+               }
+               .right-content{
+                    width: 100%;
+                    h1{
+                         font-size: 3vw !important;
+                    }
+               }
+          }
+     }
+ }
+
+//Registration Mobile
+ @media only screen and (max-width: 400px){
+     .registration-page{
+          .registration-content {
+               .left-content{
+                    p{
+                         font-size: 3vw;
+                    }
+                    h1{
+                         font-size: 6vw;
+                    }
+               }
+               .right-content{
+                    h1{
+                         font-size: 6vw !important;
+                    }
+               }
+          }
+     }
+ }
+ 

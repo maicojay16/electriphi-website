@@ -1,0 +1,19 @@
+{
+    "aboutIntro": [
+      {
+        "title": "What we do",
+        "subTitle": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+          "tempor incididunt ut labore et dolore magna aliqua"
+        ]
+      }
+    ],
+    "aboutInfo": [
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "firstParag": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Facilisis mauris sit amet massa vitae tortor. Pellentesque id nibh tortor id aliquet lectus proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat.",
+        "secondParag": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Facilisis mauris sit amet massa vitae tortor. Pellentesque id nibh tortor id aliquet lectus proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat."
+      }
+    ]
+  }
+  

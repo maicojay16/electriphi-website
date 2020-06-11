@@ -1,0 +1,148 @@
+@import "./src/theme";
+
+.card{
+    box-shadow: $lightBoxShadow;
+    background-color: $lightColor;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    color: $primaryColor;
+    margin-bottom: 20px;
+    h1.title{
+        font-size: 21px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    h5.sub-title{
+        font-size: $fontNormal;
+    }
+    p{
+        font-size: $fontNormal;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .read-more{
+        color: $secondaryColor;
+        text-decoration: none;
+        font-size: $fontNormal;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        svg{
+            font-size: 1.2rem;
+        }
+        .link-icon{
+            color: $primaryColor;
+        }
+    }
+    .link{
+        padding: 15px 0 25px 0;
+    }
+    .card-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+        img{
+            margin-right: 20px;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            strong.subject{
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+            strong.name{
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+            sub{
+                font-size: 8px;
+                color: #b5b5b5;
+            }
+            sub.study{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        padding: 2vw;
+        border-radius: 1vw;
+        margin-bottom: 2vw;
+        h1.title{
+            font-size: 2.5vw;
+        }
+        h5.sub-title{
+            font-size: 2vw;
+        }
+        p{
+            font-size: 2vv;
+            line-height: 2vw;
+        }
+        .read-more{
+            svg{
+                font-size: 2vw;
+            }
+        }
+        .link{
+            padding: 1vw 0 2vw 0;
+        }
+        .card-bottom{
+            margin-top: 2vw;
+            img{
+                margin-right: 2vw;
+            }
+            .info{
+                strong.subject{
+                    font-size: 2vw;
+                }
+                strong.name{
+                    font-size: 2vw;
+                    letter-spacing: 1px;
+                }
+                sub{
+                    font-size: 1vw;
+                }
+                sub.study{
+                    margin-top: 1vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card{
+        padding: 2vw;
+        border-radius: 1vw;
+        margin-bottom: 2vw;
+        h1.title{
+            font-size: 4vw;
+        }
+        .card-bottom{
+            margin-top: 2vw;
+            img{
+                margin-right: 3vw;
+            }
+            .info{
+                strong.subject{
+                    font-size: 3vw;
+                }
+                strong.name{
+                    font-size: 3vw;
+                    letter-spacing: 1px;
+                }
+                sub{
+                    font-size: 2vw;
+                }
+                sub.study{
+                    margin-top: 2vw;
+                }
+            }
+        }
+    }
+}

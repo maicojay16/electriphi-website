@@ -1,0 +1,194 @@
+@import "./src/theme";
+
+.card{
+    box-shadow: $lightBoxShadow;
+    background-color: $lightColor;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    color: $primaryColor;
+    margin-bottom: 20px;
+    .card-header{
+        display: flex;
+        align-items: flex-start;
+        .card-info{
+            .name{
+                sub.label{
+                    font-size: 8px;
+                    color: #b5b5b5;
+                }
+                p.data{
+                    margin: 0;
+                    letter-spacing: 1px;
+                    font-size: 14px;
+                    color: #616161;
+                    font-weight: 600;
+                }
+            }
+            .role{
+                sub.label{
+                    font-size: 8px;
+                    color: #b5b5b5;
+                }
+                p.data{
+                    margin: 0;
+                    font-size: 10px;
+                    color: #616161;
+                }
+            }
+            .education{
+                sub.label{
+                    font-size: 8px;
+                    color: #b5b5b5;
+                }
+                p.data{
+                    margin: 0;
+                    font-size: 10px;
+                    color: #616161;
+                }
+            }
+            .research{
+                sub.label{
+                    font-size: 8px;
+                    color: #b5b5b5;
+                }
+                p.data{
+                    margin: 0;
+                    font-size: 10px;
+                    color: #616161;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+    h5.sub-title{
+        font-size: $fontNormal;
+    }
+    p{
+        font-size: 10px;
+        line-height: 20px;
+        text-align: justify;
+        color: #616161;
+    }
+  
+}
+
+
+//TeamCard Tablet
+@media only screen and (max-width: 768px){
+    .card{
+        padding: 2vw;
+        margin-bottom: 2vw;
+        .card-header{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column-reverse;
+            align-items: center;
+            .card-info{
+                .name{
+                    sub.label{
+                        font-size: 1.5vw;
+                    }
+                    p.data{
+                        font-size: 2vw;
+                    }
+                }
+                .role{
+                    sub.label{
+                        font-size: 1.5vw;
+                    }
+                    p.data{
+                        font-size: 1.5vw;
+                    }
+                }
+                .education{
+                    sub.label{
+                        font-size: 1.5vw;
+                    }
+                    p.data{
+                        font-size: 1.5vw;
+                    }
+                }
+                .research{
+                    sub.label{
+                        font-size: 1.5vw;
+                    }
+                    p.data{
+                        font-size: 1.5vw;
+                        line-height: 2vw;
+                    }
+                }
+            }
+        }
+        h5.sub-title{
+            font-size: 1.5vw;
+        }
+        p{
+            font-size: 1.5vw;
+            line-height: 2vw;
+        }
+        .read-more{
+            font-size: 1.5vw;
+        }
+      
+    }
+}
+//TeamCard Tablet
+@media only screen and (max-width: 400px){
+    .card{
+        padding: 4vw;
+        margin-bottom: 4vw;
+        .card-header{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column-reverse;
+            align-items: center;
+            .card-info{
+                .name{
+                    sub.label{
+                        font-size: 2.5vw;
+                    }
+                    p.data{
+                        font-size: 4vw;
+                    }
+                }
+                .role{
+                    sub.label{
+                        font-size: 2.5vw;
+                    }
+                    p.data{
+                        font-size: 3vw;
+                    }
+                }
+                .education{
+                    sub.label{
+                        font-size: 3vw;
+                    }
+                    p.data{
+                        font-size: 3vw;
+                    }
+                }
+                .research{
+                    sub.label{
+                        font-size: 3vw;
+                    }
+                    p.data{
+                        font-size: 3vw;
+                        line-height: 4vw;
+                    }
+                }
+            }
+        }
+        h5.sub-title{
+            font-size: 3.5vw;
+        }
+        p{
+            font-size: 3.5vw;
+            line-height: 4.5vw;
+        }
+        .read-more{
+            font-size: 3.5vw;
+        }
+      
+    }
+}
+

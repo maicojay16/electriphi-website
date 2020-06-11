@@ -1,0 +1,127 @@
+.section-introdata{
+    .section-introdata-content{
+        width: 65%;
+        margin-left: 10px;
+        .featured-research{
+            background-color: #ffb214;
+            font-size: 10px;
+            padding: 5px 10px 5px 10px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 600;
+        }
+        h1{
+            margin: 20px 0 20px 0;
+            font-size: 35px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        h5{
+            color: #616161;
+            font-size: 12px;
+        }
+        .data{
+            margin: 20px 0 20px 0;
+            display: flex;
+            align-items: center;
+            .info{
+                display: flex;
+                flex-direction: column;
+                strong.subject{
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: #616161;
+                }
+                strong.name{
+                    font-size: 22px;
+                    letter-spacing: 1px;
+                    color: #616161;
+                }
+                sub{
+                    font-size: 12px;
+                    color: #b5b5b5;
+                }
+                sub.study{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+// research tablet
+@media only screen and (max-width: 768px){
+    .section-introdata{
+        .section-introdata-content{
+            width: 100%;
+            .featured-research{
+                font-size: 1.5vw;
+                padding: 1vw;
+            }
+            h1{
+                margin: 2vw 0;
+                font-size: 3.5vw;
+            }
+            h5{
+                font-size: 2vw;
+            }
+            .data{
+                margin: 2vw 0;
+                .info{
+                    strong.subject{
+                        font-size: 2vw;
+                    }
+                    strong.name{
+                        font-size: 2.5vw;
+                    }
+                    sub{
+                        font-size: 2vw;
+                    }
+                    sub.study{
+                        margin-top: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}
+// research mobile
+@media only screen and (max-width: 400px){
+    .section-introdata{
+        .section-introdata-content{
+            width: 100%;
+            .featured-research{
+                font-size: 2vw;
+                padding: 1vw;
+            }
+            h1{
+                margin: 2.5vw 0;
+                font-size: 4vw;
+            }
+            h5{
+                font-size: 3vw;
+            }
+            .data{
+                margin: 2.5vw 0;
+                img#avatar.lg.spacing{
+                    margin: 1vw 3vw 0 0;
+                }
+                .info{
+                    strong.subject{
+                        font-size: 3vw;
+                    }
+                    strong.name{
+                        font-size: 3.5vw;
+                    }
+                    sub{
+                        font-size: 3vw;
+                    }
+                    sub.study{
+                        margin-top: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.about-body{
+    background-color: #fff;
+}
+
+.about-content{
+    padding: 8% 15% 8% 15%;
+    h1{
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #333;
+    }
+    p{
+        font-size: 16px;
+        color: #333;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-content{
+        padding: 6vw 4vw;
+        h1{
+            font-size: 4vw;
+        }
+        p{
+            font-size: 3vw;
+            color: #333;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    .about-content{
+        padding: 7vw 5vw;
+        h1{
+            font-size: 5vw;
+        }
+        p{
+            font-size: 4vw;
+            color: #333;
+        }
+    }
+    
+}
+

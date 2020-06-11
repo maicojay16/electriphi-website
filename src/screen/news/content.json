@@ -1,0 +1,41 @@
+{
+  "intro": [
+    {
+      "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "subTitle": "Name of Author • Date Published",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    }
+  ],
+    "researches": [
+      {
+        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "subTitle": "Name of Author • Date Published",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      },
+      {
+        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "subTitle": "Name of Author • Date Published",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      },
+      {
+        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "subTitle": "Name of Author • Date Published",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      },
+      {
+        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "subTitle": "Name of Author • Date Published",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      },
+      {
+        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "subTitle": "Name of Author • Date Published",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      }, {
+        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "subTitle": "Name of Author • Date Published",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      }
+    ]
+  }
+  

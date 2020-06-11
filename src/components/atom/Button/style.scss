@@ -1,0 +1,36 @@
+a.btn{
+    background-color: #ffb214;
+    text-transform: capitalize;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px){
+    a.btn{
+        border-radius: 10vw;
+        padding: 1vw 2vw;
+        font-size: 2vw;
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    a.btn{
+        border-radius: 11vw;
+        padding: 2vw 3vw;
+        font-size: 3vw;
+    }
+    
+}
+

@@ -1,0 +1,104 @@
+.news-page{
+    background-color: #fff;
+    .full-news-card{
+        display: flex;
+        color: #616161;
+        margin-bottom: 40px;
+        .full-cover{
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+        .news-card-content{
+            width: 42%;
+            padding: 20px 20px 20px 50px;
+            h1.title{
+                font-size: 35px;
+                font-weight: 600;
+                color: #1592e6;
+                text-transform: capitalize;
+            }
+            h5.sub-title{
+                font-size: 12px;
+            }
+            p{
+                font-size: 12px;
+                line-height: 20px;
+                text-align: justify;
+            }
+            .read-more{
+                color: #1592e6;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                svg{
+                    font-size: 1.2rem;
+                }
+                .link-icon{
+                    color: #616161;
+                }
+            }
+        }
+    }
+}
+
+//News tablet
+@media only screen and (max-width: 768px){
+    .news-page{
+       .full-width{
+           width: 100%;
+            .full-news-card{
+                display: flex;
+                flex-direction: column;
+                .news-card-content{
+                    width: 90%;
+                    padding: 5%;
+                    h1.title{
+                        font-size: 4vw;
+                    }
+                    h5.sub-title{
+                        font-size: 2vw;
+                    }
+                    p{
+                        font-size: 2vw;
+                    }
+                    .read-more{
+                        font-size: 2vw;
+                    }
+                }
+            }
+       }
+    }
+}
+
+//News mobile
+@media only screen and (max-width: 400px){
+    .news-page{
+       .full-width{
+           width: 100%;
+            .full-news-card{
+                display: flex;
+                flex-direction: column;
+                .news-card-content{
+                    width: 90%;
+                    padding: 5%;
+                    h1.title{
+                        font-size: 5vw;
+                    }
+                    h5.sub-title{
+                        font-size: 3vw;
+                    }
+                    p{
+                        font-size: 3vw;
+                    }
+                    .read-more{
+                        font-size: 3vw;
+                    }
+                }
+            }
+       }
+    }
+}

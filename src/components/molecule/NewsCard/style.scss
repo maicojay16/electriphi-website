@@ -1,0 +1,97 @@
+@import "./src/theme";
+
+.news-card{
+    color: $primaryColor;
+    .cover{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .news-card-content{
+        padding: 20px;
+        h1.title{
+            font-size: 21px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        h5.sub-title{
+            font-size: $fontNormal;
+        }
+        p{
+            font-size: $fontNormal;
+            line-height: 20px;
+            text-align: justify;
+        }
+        .read-more{
+            color: $secondaryColor;
+            text-decoration: none;
+            font-size: $fontNormal;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            svg{
+                font-size: 1.2rem;
+            }
+            .link-icon{
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+//News Tablet
+@media only screen and (max-width: 768px){
+    .news-card{
+        .cover{
+            width: 100%;
+        }
+        .news-card-content{
+            padding: 2vw;
+            h1.title{
+                font-size: 2.5vw;
+            }
+            h5.sub-title{
+                font-size: 1.5vw;
+            }
+            p{
+                font-size: 1.5vw;
+                line-height: 2vw;
+            }
+            .read-more{
+                font-size: 1.5vw;
+                svg{
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+}
+
+//News Mobile
+@media only screen and (max-width: 400px){
+    .news-card{
+        .cover{
+            width: 100%;
+        }
+        .news-card-content{
+            padding: 2vw;
+            h1.title{
+                font-size: 3vw;
+            }
+            h5.sub-title{
+                font-size: 2.5vw;
+            }
+            p{
+                font-size: 2.5vw;
+                line-height: 3vw;
+            }
+            .read-more{
+                font-size: 2vw;
+                svg{
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
