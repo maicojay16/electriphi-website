@@ -41633,6 +41633,25 @@ var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", 
 }), 'AccountCircle');
 
 exports.default = _default;
+},{"@babel/runtime/helpers/interopRequireDefault":"node_modules/@babel/runtime/helpers/interopRequireDefault.js","react":"node_modules/react/index.js","./utils/createSvgIcon":"node_modules/@material-ui/icons/utils/createSvgIcon.js"}],"node_modules/@material-ui/icons/Attachment.js":[function(require,module,exports) {
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _createSvgIcon = _interopRequireDefault(require("./utils/createSvgIcon"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M2 12.5C2 9.46 4.46 7 7.5 7H18c2.21 0 4 1.79 4 4s-1.79 4-4 4H9.5C8.12 15 7 13.88 7 12.5S8.12 10 9.5 10H17v2H9.41c-.55 0-.55 1 0 1H18c1.1 0 2-.9 2-2s-.9-2-2-2H7.5C5.57 9 4 10.57 4 12.5S5.57 16 7.5 16H17v2H7.5C4.46 18 2 15.54 2 12.5z"
+}), 'Attachment');
+
+exports.default = _default;
 },{"@babel/runtime/helpers/interopRequireDefault":"node_modules/@babel/runtime/helpers/interopRequireDefault.js","react":"node_modules/react/index.js","./utils/createSvgIcon":"node_modules/@material-ui/icons/utils/createSvgIcon.js"}],"src/icons/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -41699,6 +41718,12 @@ Object.defineProperty(exports, "AccountCircleIcon", {
     return _AccountCircle.default;
   }
 });
+Object.defineProperty(exports, "AttachmentIcon", {
+  enumerable: true,
+  get: function () {
+    return _Attachment.default;
+  }
+});
 
 var _Link = _interopRequireDefault(require("@material-ui/icons/Link"));
 
@@ -41720,8 +41745,10 @@ var _Close = _interopRequireDefault(require("@material-ui/icons/Close"));
 
 var _AccountCircle = _interopRequireDefault(require("@material-ui/icons/AccountCircle"));
 
+var _Attachment = _interopRequireDefault(require("@material-ui/icons/Attachment"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"@material-ui/icons/Link":"node_modules/@material-ui/icons/Link.js","@material-ui/icons/House":"node_modules/@material-ui/icons/House.js","@material-ui/icons/LocationOn":"node_modules/@material-ui/icons/LocationOn.js","@material-ui/icons/Email":"node_modules/@material-ui/icons/Email.js","@material-ui/icons/Call":"node_modules/@material-ui/icons/Call.js","@material-ui/icons/ChevronLeft":"node_modules/@material-ui/icons/ChevronLeft.js","@material-ui/icons/ChevronRight":"node_modules/@material-ui/icons/ChevronRight.js","@material-ui/icons/Menu":"node_modules/@material-ui/icons/Menu.js","@material-ui/icons/Close":"node_modules/@material-ui/icons/Close.js","@material-ui/icons/AccountCircle":"node_modules/@material-ui/icons/AccountCircle.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"@material-ui/icons/Link":"node_modules/@material-ui/icons/Link.js","@material-ui/icons/House":"node_modules/@material-ui/icons/House.js","@material-ui/icons/LocationOn":"node_modules/@material-ui/icons/LocationOn.js","@material-ui/icons/Email":"node_modules/@material-ui/icons/Email.js","@material-ui/icons/Call":"node_modules/@material-ui/icons/Call.js","@material-ui/icons/ChevronLeft":"node_modules/@material-ui/icons/ChevronLeft.js","@material-ui/icons/ChevronRight":"node_modules/@material-ui/icons/ChevronRight.js","@material-ui/icons/Menu":"node_modules/@material-ui/icons/Menu.js","@material-ui/icons/Close":"node_modules/@material-ui/icons/Close.js","@material-ui/icons/AccountCircle":"node_modules/@material-ui/icons/AccountCircle.js","@material-ui/icons/Attachment":"node_modules/@material-ui/icons/Attachment.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -41853,6 +41880,8 @@ function Header() {
   }, "About")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/feedback"
   }, "Feedback")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/partnership"
+  }, "Partnership")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/"
   }, "Contact Us")), /*#__PURE__*/_react.default.createElement("li", {
     className: "userRegister"
@@ -41908,6 +41937,9 @@ function Footer(_ref) {
     className: className,
     to: "/feedback"
   }, "Feedback")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: className,
+    to: "/partnership"
+  }, "Partnership")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     className: className,
     to: "/"
   }, "Contact Us")))));
@@ -41999,44 +42031,94 @@ function ResearchCard(_ref) {
       subTitle = _ref.subTitle,
       excerpt = _ref.excerpt,
       avatar = _ref.avatar,
-      avatarSize = _ref.avatarSize,
       name = _ref.name,
-      subject = _ref.subject;
+      volume = _ref.volume,
+      featured = _ref.featured,
+      date = _ref.date,
+      publisher = _ref.publisher,
+      field = _ref.field;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "item"
+    className: "item-3"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "card"
+    className: "card-research"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-top-solo"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-left"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "title"
-  }, title), /*#__PURE__*/_react.default.createElement("h5", {
-    className: "sub-title"
-  }, subTitle), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+  }, title), /*#__PURE__*/_react.default.createElement("div", {
+    className: "upper-data"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left"
+  }, /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Volume"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, volume), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Featured In"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, featured)), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right"
+  }, /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Date of Publication"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, date), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Publisher"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, publisher))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
     style: {
-      margin: "20px 0 0 0"
+      margin: "20px 0 30px 0"
     }
-  }), /*#__PURE__*/_react.default.createElement("p", null, excerpt), /*#__PURE__*/_react.default.createElement(_reactRouterDom.NavLink, {
-    to: "/",
-    className: "read-more"
-  }, "Read More"), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
-    style: {
-      margin: "20px 0 0 0"
-    }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-bottom"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-bottom-solo"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "lower-data"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "content"
   }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
     avatar: avatar,
-    size: avatarSize
+    size: "extra-sm"
   }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "info"
-  }, /*#__PURE__*/_react.default.createElement("sub", null, "Author"), /*#__PURE__*/_react.default.createElement("strong", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
     className: "name"
   }, name), /*#__PURE__*/_react.default.createElement("sub", {
-    className: "study"
-  }, "Field of study"), /*#__PURE__*/_react.default.createElement("strong", {
-    className: "subject"
-  }, subject)))));
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, field))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: avatar,
+    size: "extra-sm"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "name"
+  }, name), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, field)))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "abstract"
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "subTitle"
+  }, subTitle), /*#__PURE__*/_react.default.createElement("p", null, excerpt), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, " Read More ")))));
 }
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../atom/Avatar":"src/components/atom/Avatar/index.js","./style.scss":"src/components/molecule/ResearchCard/style.scss"}],"src/components/atom/Breadcrumbs/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../atom/Avatar":"src/components/atom/Avatar/index.js","./style.scss":"src/components/molecule/ResearchCard/style.scss"}],"src/assets/img/icon_breadcrumb_house.png":[function(require,module,exports) {
+module.exports = "/icon_breadcrumb_house.fc7f9fcd.png";
+},{}],"src/assets/fonts/index.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./avenir_black.otf":[["avenir_black.75dbc11b.otf","src/assets/fonts/avenir_black.otf"],"src/assets/fonts/avenir_black.otf"],"./avenir_heavy.ttf":[["avenir_heavy.5505bfa8.ttf","src/assets/fonts/avenir_heavy.ttf"],"src/assets/fonts/avenir_heavy.ttf"],"./avenir_light.otf":[["avenir_light.23154465.otf","src/assets/fonts/avenir_light.otf"],"src/assets/fonts/avenir_light.otf"],"./avenir_medium.ttf":[["avenir_medium.696d4205.ttf","src/assets/fonts/avenir_medium.ttf"],"src/assets/fonts/avenir_medium.ttf"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/atom/Breadcrumbs/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -42051,7 +42133,9 @@ exports.default = Breadcrumbs;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _icons = require("../../../icons");
+var _icon_breadcrumb_house = _interopRequireDefault(require("../../../assets/img/icon_breadcrumb_house.png"));
+
+var _fonts = _interopRequireDefault(require("../../../assets/fonts"));
 
 var _style = _interopRequireDefault(require("./style.scss"));
 
@@ -42065,12 +42149,15 @@ function Breadcrumbs(_ref) {
     className: "breadcrumbs-content"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "breadcrumbs"
-  }, /*#__PURE__*/_react.default.createElement(_icons.HouseIcon, null), " ", /*#__PURE__*/_react.default.createElement("sub", {
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    class: "breadcrumbs-icon",
+    src: _icon_breadcrumb_house.default
+  }), " ", /*#__PURE__*/_react.default.createElement("sub", {
     className: "link",
     style: style
-  }, "> ", breadcrumbs)), /*#__PURE__*/_react.default.createElement("h1", null, title));
+  }, " > ", breadcrumbs)), /*#__PURE__*/_react.default.createElement("h1", null, title));
 }
-},{"react":"node_modules/react/index.js","../../../icons":"src/icons/index.js","./style.scss":"src/components/atom/Breadcrumbs/style.scss"}],"src/components/atom/ReadMore/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../../assets/img/icon_breadcrumb_house.png":"src/assets/img/icon_breadcrumb_house.png","../../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/components/atom/Breadcrumbs/style.scss"}],"src/components/atom/ReadMore/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -42100,113 +42187,48 @@ function ReadMore() {
 }
 },{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./style.scss":"src/components/atom/ReadMore/style.scss"}],"src/assets/img/avatar.jpg":[function(require,module,exports) {
 module.exports = "/avatar.0d7735ea.jpg";
-},{}],"src/screen/researches/style.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/researches/section/IntroData.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = IntroData;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _HorizontalDivider = _interopRequireDefault(require("../../../components/atom/HorizontalDivider"));
-
-var _Avatar = _interopRequireDefault(require("../../../components/atom/Avatar"));
-
-var _avatar = _interopRequireDefault(require("../../../assets/img/avatar.jpg"));
-
-var _style = _interopRequireDefault(require("../style.scss"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function IntroData() {
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "section-introdata"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "section-introdata-content"
-  }, /*#__PURE__*/_react.default.createElement("sub", {
-    className: "featured-research"
-  }, "Featured Research"), /*#__PURE__*/_react.default.createElement("h1", null, "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit."), /*#__PURE__*/_react.default.createElement("h5", null, "Volume \u2022 Publisher \u2022 Date Published"), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
-    style: {
-      borderBottom: "solid #b5b5b5 5px"
-    }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "data"
-  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
-    size: "lg spacing",
-    avatar: _avatar.default
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "info"
-  }, /*#__PURE__*/_react.default.createElement("sub", null, "Author"), /*#__PURE__*/_react.default.createElement("strong", {
-    className: "name"
-  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
-    className: "study"
-  }, "Field of study"), /*#__PURE__*/_react.default.createElement("strong", {
-    className: "subject"
-  }, "Lorem Ipsum Dolore")))));
-}
-},{"react":"node_modules/react/index.js","../../../components/atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../../components/atom/Avatar":"src/components/atom/Avatar/index.js","../../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","../style.scss":"src/screen/researches/style.scss"}],"src/screen/researches/content.json":[function(require,module,exports) {
+},{}],"src/screen/researches/content.json":[function(require,module,exports) {
 module.exports = {
   "researches": [{
-    "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "subTitle": "Volume • Publisher • Date Published",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    "link": "Lorem ipsum dolor sit amet, consectetur...",
-    "name": "Juan Dela Cruz",
-    "author": "Author",
-    "study": "Field of Study",
-    "subject": "Lorem Ipsum Dolore"
+    "title": "Journal Title Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum dolor sit amet.",
+    "volume": "Volume VII",
+    "featured": "Chemical Engineering Daily",
+    "date": "May 21, 2020",
+    "publisher": "Diliman Publishing House",
+    "name": "Dr. Jose Gabriel Buenavilla",
+    "field": "Chemical Engineering",
+    "subTitle": "Abstract",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   }, {
-    "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "subTitle": "Volume • Publisher • Date Published",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    "link": "Lorem ipsum dolor sit amet, consectetur...",
-    "name": "Juan Dela Cruz",
-    "author": "Author",
-    "study": "Field of Study",
-    "subject": "Lorem Ipsum Dolore"
+    "title": "Journal Title Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum dolor sit amet.",
+    "volume": "Volume VII",
+    "featured": "Chemical Engineering Daily",
+    "date": "May 21, 2020",
+    "publisher": "Diliman Publishing House",
+    "name": "Dr. Jose Gabriel Buenavilla",
+    "field": "Chemical Engineering",
+    "subTitle": "Abstract",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   }, {
-    "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "subTitle": "Volume • Publisher • Date Published",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    "link": "Lorem ipsum dolor sit amet, consectetur...",
-    "name": "Juan Dela Cruz",
-    "author": "Author",
-    "study": "Field of Study",
-    "subject": "Lorem Ipsum Dolore"
+    "title": "Journal Title Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum dolor sit amet.",
+    "volume": "Volume VII",
+    "featured": "Chemical Engineering Daily",
+    "date": "May 21, 2020",
+    "publisher": "Diliman Publishing House",
+    "name": "Dr. Jose Gabriel Buenavilla",
+    "field": "Chemical Engineering",
+    "subTitle": "Abstract",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   }, {
-    "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "subTitle": "Volume • Publisher • Date Published",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    "link": "Lorem ipsum dolor sit amet, consectetur...",
-    "name": "Juan Dela Cruz",
-    "author": "Author",
-    "study": "Field of Study",
-    "subject": "Lorem Ipsum Dolore"
-  }, {
-    "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "subTitle": "Volume • Publisher • Date Published",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    "link": "Lorem ipsum dolor sit amet, consectetur...",
-    "name": "Juan Dela Cruz",
-    "author": "Author",
-    "study": "Field of Study",
-    "subject": "Lorem Ipsum Dolore"
-  }, {
-    "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "subTitle": "Volume • Publisher • Date Published",
-    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    "link": "Lorem ipsum dolor sit amet, consectetur...",
-    "name": "Juan Dela Cruz",
-    "author": "Author",
-    "study": "Field of Study",
-    "subject": "Lorem Ipsum Dolore"
+    "title": "Journal Title Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum dolor sit amet.",
+    "volume": "Volume VII",
+    "featured": "Chemical Engineering Daily",
+    "date": "May 21, 2020",
+    "publisher": "Diliman Publishing House",
+    "name": "Dr. Jose Gabriel Buenavilla",
+    "field": "Chemical Engineering",
+    "subTitle": "Abstract",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   }]
 };
 },{}],"src/theme.scss":[function(require,module,exports) {
@@ -42232,8 +42254,6 @@ var _Breadcrumbs = _interopRequireDefault(require("../../components/atom/Breadcr
 
 var _ReadMore = _interopRequireDefault(require("../../components/atom/ReadMore"));
 
-var _IntroData = _interopRequireDefault(require("./section/IntroData"));
-
 var _avatar = _interopRequireDefault(require("../../assets/img/avatar.jpg"));
 
 var _content = require("./content.json");
@@ -42250,27 +42270,30 @@ function Researches() {
     title: "Researches"
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_IntroData.default, null)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "row"
   }, _content.researches.map(function (_ref, index) {
     var title = _ref.title,
         subTitle = _ref.subTitle,
         excerpt = _ref.excerpt,
-        link = _ref.link,
         name = _ref.name,
-        subject = _ref.subject;
+        volume = _ref.volume,
+        featured = _ref.featured,
+        date = _ref.date,
+        publisher = _ref.publisher,
+        field = _ref.field;
     return /*#__PURE__*/_react.default.createElement(_ResearchCard.default, {
       key: title + index,
       title: title,
       subTitle: subTitle,
       excerpt: excerpt,
-      link: link,
       avatar: _avatar.default,
-      avatarSize: "sm",
       name: name,
-      subject: subject
+      volume: volume,
+      featured: featured,
+      date: date,
+      publisher: publisher,
+      field: field
     });
   }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
@@ -42278,7 +42301,7 @@ function Researches() {
     className: "semi-light"
   }));
 }
-},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/molecule/ResearchCard":"src/components/molecule/ResearchCard/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/ReadMore":"src/components/atom/ReadMore/index.js","./section/IntroData":"src/screen/researches/section/IntroData.js","../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","./content.json":"src/screen/researches/content.json","../../theme.scss":"src/theme.scss"}],"src/components/atom/BackgroundImage/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/molecule/ResearchCard":"src/components/molecule/ResearchCard/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/ReadMore":"src/components/atom/ReadMore/index.js","../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","./content.json":"src/screen/researches/content.json","../../theme.scss":"src/theme.scss"}],"src/components/atom/BackgroundImage/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -42316,18 +42339,19 @@ function BackgroundImage(_ref) {
     src: backgroundLogo
   }), /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("p", null, subTitle)))));
 }
-},{"react":"node_modules/react/index.js","./style.scss":"src/components/atom/BackgroundImage/style.scss"}],"src/assets/img/about_background.png":[function(require,module,exports) {
-module.exports = "/about_background.8a68e2b7.png";
+},{"react":"node_modules/react/index.js","./style.scss":"src/components/atom/BackgroundImage/style.scss"}],"src/assets/img/about-1.png":[function(require,module,exports) {
+module.exports = "/about-1.c1de8584.png";
+},{}],"src/assets/img/about-2.png":[function(require,module,exports) {
+module.exports = "/about-2.710e219c.png";
+},{}],"src/assets/img/graphic_about_partnership.png":[function(require,module,exports) {
+module.exports = "/graphic_about_partnership.589c203c.png";
+},{}],"src/assets/img/icon_about-us_electriphi.png":[function(require,module,exports) {
+module.exports = "/icon_about-us_electriphi.daa63f3f.png";
 },{}],"src/screen/about/content.json":[function(require,module,exports) {
 module.exports = {
   "aboutIntro": [{
     "title": "What we do",
     "subTitle": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", "tempor incididunt ut labore et dolore magna aliqua"]
-  }],
-  "aboutInfo": [{
-    "title": "Lorem ipsum dolor sit amet",
-    "firstParag": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Facilisis mauris sit amet massa vitae tortor. Pellentesque id nibh tortor id aliquet lectus proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat.",
-    "secondParag": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Facilisis mauris sit amet massa vitae tortor. Pellentesque id nibh tortor id aliquet lectus proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat."
   }]
 };
 },{}],"src/screen/about/style.scss":[function(require,module,exports) {
@@ -42345,15 +42369,21 @@ exports.default = About;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _reactRouterDom = require("react-router-dom");
+
 var _Footer = _interopRequireDefault(require("../../components/molecule/Footer"));
 
 var _Breadcrumbs = _interopRequireDefault(require("../../components/atom/Breadcrumbs"));
 
 var _BackgroundImage = _interopRequireDefault(require("../../components/atom/BackgroundImage"));
 
-var _about_background = _interopRequireDefault(require("../../assets/img/about_background.png"));
+var _about = _interopRequireDefault(require("../../assets/img/about-1.png"));
 
-var _logo = _interopRequireDefault(require("../../assets/img/logo.png"));
+var _about2 = _interopRequireDefault(require("../../assets/img/about-2.png"));
+
+var _graphic_about_partnership = _interopRequireDefault(require("../../assets/img/graphic_about_partnership.png"));
+
+var _icon_aboutUs_electriphi = _interopRequireDefault(require("../../assets/img/icon_about-us_electriphi.png"));
 
 var _content = require("./content.json");
 
@@ -42362,7 +42392,9 @@ var _style = _interopRequireDefault(require("./style.scss"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function About() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-page"
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "about-body"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
@@ -42374,38 +42406,54 @@ function About() {
         subTitle = _ref.subTitle;
     return /*#__PURE__*/_react.default.createElement(_BackgroundImage.default, {
       key: title + index,
-      backgroundImage: _about_background.default,
-      backgroundLogo: _logo.default,
+      backgroundImage: _about2.default,
+      backgroundLogo: _icon_aboutUs_electriphi.default,
       title: title,
       subTitle: subTitle
     });
-  }), _content.aboutInfo.map(function (_ref2, index) {
-    var title = _ref2.title,
-        firstParag = _ref2.firstParag,
-        secondParag = _ref2.secondParag;
-    return /*#__PURE__*/_react.default.createElement("div", {
-      className: "container"
-    }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "about-content",
-      key: title + index
-    }, /*#__PURE__*/_react.default.createElement("h1", null, title), /*#__PURE__*/_react.default.createElement("p", null, firstParag), /*#__PURE__*/_react.default.createElement("p", null, secondParag)));
-  }), /*#__PURE__*/_react.default.createElement(_BackgroundImage.default, {
-    backgroundImage: _about_background.default
-  }), _content.aboutInfo.map(function (_ref3, index) {
-    var title = _ref3.title,
-        firstParag = _ref3.firstParag,
-        secondParag = _ref3.secondParag;
-    return /*#__PURE__*/_react.default.createElement("div", {
-      className: "container"
-    }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "about-content",
-      key: title + index
-    }, /*#__PURE__*/_react.default.createElement("h1", null, title), /*#__PURE__*/_react.default.createElement("p", null, firstParag), /*#__PURE__*/_react.default.createElement("p", null, secondParag)));
-  })), /*#__PURE__*/_react.default.createElement(_Footer.default, {
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-content-first"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Lorem ipsum dolor sit amet."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Facilisis mauris sit amet massa vitae tortor. Pellentesque id nibh tortor id aliquet lectus proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat.")), /*#__PURE__*/_react.default.createElement("img", {
+    className: "about-content-img",
+    src: _about.default
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-content-second"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Lorem ipsum dolor sit amet."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Facilisis mauris sit amet massa vitae tortor. Pellentesque id nibh tortor id aliquet lectus proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat.")), /*#__PURE__*/_react.default.createElement("img", {
+    className: "about-content-img",
+    src: _about2.default
+  }))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/partnership",
+    className: "link-to-partnership"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "partner-link",
+    src: _graphic_about_partnership.default
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-content-first"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Lorem ipsum dolor sit amet."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Facilisis mauris sit amet massa vitae tortor. Pellentesque id nibh tortor id aliquet lectus proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat.")), /*#__PURE__*/_react.default.createElement("img", {
+    className: "about-content-img",
+    src: _about.default
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "about-content-second"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "Lorem ipsum dolor sit amet."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Facilisis mauris sit amet massa vitae tortor. Pellentesque id nibh tortor id aliquet lectus proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat.")), /*#__PURE__*/_react.default.createElement("img", {
+    className: "about-content-img",
+    src: _about2.default
+  })))), /*#__PURE__*/_react.default.createElement(_Footer.default, {
     className: "light"
   }));
 }
-},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/BackgroundImage":"src/components/atom/BackgroundImage/index.js","../../assets/img/about_background.png":"src/assets/img/about_background.png","../../assets/img/logo.png":"src/assets/img/logo.png","./content.json":"src/screen/about/content.json","./style.scss":"src/screen/about/style.scss"}],"src/components/molecule/NewsCard/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/BackgroundImage":"src/components/atom/BackgroundImage/index.js","../../assets/img/about-1.png":"src/assets/img/about-1.png","../../assets/img/about-2.png":"src/assets/img/about-2.png","../../assets/img/graphic_about_partnership.png":"src/assets/img/graphic_about_partnership.png","../../assets/img/icon_about-us_electriphi.png":"src/assets/img/icon_about-us_electriphi.png","./content.json":"src/screen/about/content.json","./style.scss":"src/screen/about/style.scss"}],"src/components/molecule/NewsCard/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -42422,9 +42470,9 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _icons = require("../../../icons");
-
 var _HorizontalDivider = _interopRequireDefault(require("../../atom/HorizontalDivider"));
+
+var _fonts = _interopRequireDefault(require("../../../assets/fonts"));
 
 var _style = _interopRequireDefault(require("./style.scss"));
 
@@ -42451,9 +42499,9 @@ function News(_ref) {
   }, subTitle), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, null), /*#__PURE__*/_react.default.createElement("p", null, excerpt), /*#__PURE__*/_react.default.createElement(_reactRouterDom.NavLink, {
     to: "/",
     className: "read-more"
-  }, "Read More ", /*#__PURE__*/_react.default.createElement(_icons.ChevronRightIcon, null)))));
+  }, "Read More"))));
 }
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../../icons":"src/icons/index.js","../../atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","./style.scss":"src/components/molecule/NewsCard/style.scss"}],"src/assets/img/news_background.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/components/molecule/NewsCard/style.scss"}],"src/assets/img/news_background.png":[function(require,module,exports) {
 module.exports = "/news_background.cebb0d0b.png";
 },{}],"src/screen/news/content.json":[function(require,module,exports) {
 module.exports = {
@@ -42509,8 +42557,6 @@ var _HorizontalDivider = _interopRequireDefault(require("../../../components/ato
 
 var _news_background = _interopRequireDefault(require("../../../assets/img/news_background.png"));
 
-var _icons = require("../../../icons");
-
 var _content = require("../content.json");
 
 var _style = _interopRequireDefault(require("../style.scss"));
@@ -42537,12 +42583,12 @@ function IntroSection() {
     }, title), /*#__PURE__*/_react.default.createElement("h5", {
       className: "sub-title"
     }, subTitle), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, null), /*#__PURE__*/_react.default.createElement("p", null, excerpt), /*#__PURE__*/_react.default.createElement(_reactRouterDom.NavLink, {
-      to: "/",
+      to: "/news/newsarticle",
       className: "read-more"
-    }, "Read More ", /*#__PURE__*/_react.default.createElement(_icons.ChevronRightIcon, null)))));
+    }, "Read More"))));
   }));
 }
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../../components/atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../../assets/img/news_background.png":"src/assets/img/news_background.png","../../../icons":"src/icons/index.js","../content.json":"src/screen/news/content.json","../style.scss":"src/screen/news/style.scss"}],"src/screen/news/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../../components/atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../../assets/img/news_background.png":"src/assets/img/news_background.png","../content.json":"src/screen/news/content.json","../style.scss":"src/screen/news/style.scss"}],"src/screen/news/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42565,6 +42611,8 @@ var _news_background = _interopRequireDefault(require("../../assets/img/news_bac
 var _IntroSection = _interopRequireDefault(require("./section/IntroSection.js"));
 
 var _content = require("./content.json");
+
+var _fonts = _interopRequireDefault(require("../../assets/fonts"));
 
 var _style = _interopRequireDefault(require("./style.scss"));
 
@@ -42601,7 +42649,164 @@ function News() {
     className: "light"
   }));
 }
-},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/molecule/NewsCard":"src/components/molecule/NewsCard/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/ReadMore":"src/components/atom/ReadMore/index.js","../../assets/img/news_background.png":"src/assets/img/news_background.png","./section/IntroSection.js":"src/screen/news/section/IntroSection.js","./content.json":"src/screen/news/content.json","./style.scss":"src/screen/news/style.scss"}],"src/components/atom/Button/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/molecule/NewsCard":"src/components/molecule/NewsCard/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/ReadMore":"src/components/atom/ReadMore/index.js","../../assets/img/news_background.png":"src/assets/img/news_background.png","./section/IntroSection.js":"src/screen/news/section/IntroSection.js","./content.json":"src/screen/news/content.json","../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/screen/news/style.scss"}],"src/components/molecule/PartnershipCard/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/molecule/PartnershipCard/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = PartnershipCard;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _style = _interopRequireDefault(require("./style.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function PartnershipCard(_ref) {
+  var avatar = _ref.avatar,
+      title = _ref.title,
+      excerpt = _ref.excerpt,
+      website = _ref.website,
+      college = _ref.college,
+      smart = _ref.smart;
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "item-3"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-partnership"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "company-logo",
+    src: avatar
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "title"
+  }, title), /*#__PURE__*/_react.default.createElement("p", {
+    className: "excerpt"
+  }, excerpt), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role"
+  }, "Official Website"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "url"
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, null, website)), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role"
+  }, "College of Chemical Engineering"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role-name"
+  }, college), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role"
+  }, "Smart Electronic Materials Laboratory"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role-name"
+  }, smart))));
+}
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./style.scss":"src/components/molecule/PartnershipCard/style.scss"}],"src/assets/img/logo_partnerships_upd.png":[function(require,module,exports) {
+module.exports = "/logo_partnerships_upd.8446194f.png";
+},{}],"src/screen/partnership/content.json":[function(require,module,exports) {
+module.exports = {
+  "partners": [{
+    "title": "University of the Philippines Diliman",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "website": "https://upd.edu.ph",
+    "college": "Prof. Joey Ocon, Ph.D.",
+    "smart": "Prof. Mary Donnabelle L. Balela, Ph.D."
+  }, {
+    "title": "University of the Philippines Diliman",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "website": "https://upd.edu.ph",
+    "college": "Prof. Joey Ocon, Ph.D.",
+    "smart": "Prof. Mary Donnabelle L. Balela, Ph.D."
+  }, {
+    "title": "University of the Philippines Diliman",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "website": "https://upd.edu.ph",
+    "college": "Prof. Joey Ocon, Ph.D.",
+    "smart": "Prof. Mary Donnabelle L. Balela, Ph.D."
+  }, {
+    "title": "University of the Philippines Diliman",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "website": "https://upd.edu.ph",
+    "college": "Prof. Joey Ocon, Ph.D.",
+    "smart": "Prof. Mary Donnabelle L. Balela, Ph.D."
+  }, {
+    "title": "University of the Philippines Diliman",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "website": "https://upd.edu.ph",
+    "college": "Prof. Joey Ocon, Ph.D.",
+    "smart": "Prof. Mary Donnabelle L. Balela, Ph.D."
+  }, {
+    "title": "University of the Philippines Diliman",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "website": "https://upd.edu.ph",
+    "college": "Prof. Joey Ocon, Ph.D.",
+    "smart": "Prof. Mary Donnabelle L. Balela, Ph.D."
+  }]
+};
+},{}],"src/screen/partnership/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/partnership/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Partnership;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Footer = _interopRequireDefault(require("../../components/molecule/Footer"));
+
+var _PartnershipCard = _interopRequireDefault(require("../../components/molecule/PartnershipCard"));
+
+var _Breadcrumbs = _interopRequireDefault(require("../../components/atom/Breadcrumbs"));
+
+var _logo_partnerships_upd = _interopRequireDefault(require("../../assets/img/logo_partnerships_upd.png"));
+
+var _content = require("./content.json");
+
+var _style = _interopRequireDefault(require("./style.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Partnership() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "partnership-page"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement(_Breadcrumbs.default, {
+    breadcrumbs: "Partnership",
+    title: "Partnership"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, _content.partners.map(function (_ref, index) {
+    var title = _ref.title,
+        excerpt = _ref.excerpt,
+        website = _ref.website,
+        college = _ref.college,
+        smart = _ref.smart;
+    return /*#__PURE__*/_react.default.createElement(_PartnershipCard.default, {
+      key: name + index,
+      avatar: _logo_partnerships_upd.default,
+      title: title,
+      excerpt: excerpt,
+      website: website,
+      college: college,
+      smart: smart
+    });
+  }))), /*#__PURE__*/_react.default.createElement(_Footer.default, {
+    className: "light"
+  }));
+}
+},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/molecule/PartnershipCard":"src/components/molecule/PartnershipCard/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../assets/img/logo_partnerships_upd.png":"src/assets/img/logo_partnerships_upd.png","./content.json":"src/screen/partnership/content.json","./style.scss":"src/screen/partnership/style.scss"}],"src/components/atom/Button/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -42677,6 +42882,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Input = _interopRequireDefault(require("../../atom/Input"));
 
+var _fonts = _interopRequireDefault(require("../../../assets/fonts"));
+
 var _style = _interopRequireDefault(require("./style.scss"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -42696,12 +42903,12 @@ function InputField(_ref) {
     className: "active"
   }, label));
 }
-},{"react":"node_modules/react/index.js","../../atom/Input":"src/components/atom/Input/index.js","./style.scss":"src/components/molecule/InputField/style.scss"}],"src/screen/registration/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../atom/Input":"src/components/atom/Input/index.js","../../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/components/molecule/InputField/style.scss"}],"src/screen/registration/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/registration/index.js":[function(require,module,exports) {
+},{"./../../assets/img/icon_registration_wind-turbine.png":[["icon_registration_wind-turbine.b0a4f2b8.png","src/assets/img/icon_registration_wind-turbine.png"],"src/assets/img/icon_registration_wind-turbine.png"],"./../../assets/img/icon_registration_sun-bulb.png":[["icon_registration_sun-bulb.27fbdf02.png","src/assets/img/icon_registration_sun-bulb.png"],"src/assets/img/icon_registration_sun-bulb.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/registration/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42718,6 +42925,8 @@ var _Button = _interopRequireDefault(require("../../components/atom/Button"));
 var _InputField = _interopRequireDefault(require("../../components/molecule/InputField"));
 
 var _Footer = _interopRequireDefault(require("../../components/molecule/Footer"));
+
+var _fonts = _interopRequireDefault(require("../../assets/fonts"));
 
 var _style = _interopRequireDefault(require("./style.scss"));
 
@@ -42747,12 +42956,26 @@ function Registration() {
     className: "section"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "title"
-  }, "Tell us about yourself"), /*#__PURE__*/_react.default.createElement(_InputField.default, {
+  }, "Your account info"), /*#__PURE__*/_react.default.createElement(_InputField.default, {
     type: "text",
     name: "username",
     labelFor: "username",
     label: "Username"
   }), /*#__PURE__*/_react.default.createElement(_InputField.default, {
+    type: "password",
+    name: "createpassword",
+    labelFor: "createpassword",
+    label: "Password"
+  }), /*#__PURE__*/_react.default.createElement(_InputField.default, {
+    type: "password",
+    name: "createpassword",
+    labelFor: "createpassword",
+    label: "Confirm Password"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "section"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Tell us about yourself"), /*#__PURE__*/_react.default.createElement(_InputField.default, {
     type: "text",
     name: "firstname",
     labelFor: "firstname",
@@ -42762,11 +42985,6 @@ function Registration() {
     name: "lastname",
     labelFor: "lastname",
     label: "Lastname"
-  }), /*#__PURE__*/_react.default.createElement(_InputField.default, {
-    type: "password",
-    name: "createpassword",
-    labelFor: "createpassword",
-    label: "Create Password"
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "section"
   }, /*#__PURE__*/_react.default.createElement("h1", {
@@ -42819,12 +43037,12 @@ function Registration() {
     className: "dark"
   }));
 }
-},{"react":"node_modules/react/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/Button":"src/components/atom/Button/index.js","../../components/molecule/InputField":"src/components/molecule/InputField/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","./style.scss":"src/screen/registration/style.scss"}],"src/screen/feedback/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/Button":"src/components/atom/Button/index.js","../../components/molecule/InputField":"src/components/molecule/InputField/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/screen/registration/style.scss"}],"src/screen/feedback/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/feedback/index.js":[function(require,module,exports) {
+},{"./../../assets/img/icon_registration_wind-turbine.png":[["icon_registration_wind-turbine.b0a4f2b8.png","src/assets/img/icon_registration_wind-turbine.png"],"src/assets/img/icon_registration_wind-turbine.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/feedback/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42844,9 +43062,27 @@ var _InputField = _interopRequireDefault(require("../../components/molecule/Inpu
 
 var _icons = require("../../icons");
 
+var _fonts = _interopRequireDefault(require("../../assets/fonts"));
+
 var _style = _interopRequireDefault(require("./style.scss"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function updateList() {
+  var input = document.getElementById('file');
+  var output = document.getElementById('fileList');
+  output.innerHTML = '<ul>';
+
+  for (var i = 0; i < input.files.length; ++i) {
+    output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+  }
+
+  output.innerHTML += '</ul>';
+}
+
+function uploadItem() {
+  document.getElementById('file').click();
+}
 
 function Feedback() {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
@@ -42894,17 +43130,41 @@ function Feedback() {
     type: "text",
     name: "lastname",
     labelFor: "lastname",
-    label: "What's your email?"
+    label: "Email"
   }), /*#__PURE__*/_react.default.createElement(_InputField.default, {
     type: "text",
     name: "lastname",
     labelFor: "lastname",
-    label: "Go ahead we're listening"
-  })), /*#__PURE__*/_react.default.createElement(_Button.default, null)))))), /*#__PURE__*/_react.default.createElement(_Footer.default, {
+    label: "Description"
+  }), /*#__PURE__*/_react.default.createElement(_InputField.default, {
+    type: "text",
+    name: "lastname",
+    labelFor: "lastname",
+    label: "Type your message"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "file-upload"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "upload-item"
+  }, /*#__PURE__*/_react.default.createElement("sub", null, "Insert File/s"), /*#__PURE__*/_react.default.createElement(_icons.AttachmentIcon, {
+    onClick: uploadItem
+  }), /*#__PURE__*/_react.default.createElement("input", {
+    type: "file",
+    name: "file",
+    id: "file",
+    multiple: true,
+    onChange: updateList,
+    style: {
+      display: "none"
+    }
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "uploaded-items"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "fileList"
+  }))), /*#__PURE__*/_react.default.createElement(_Button.default, null)))))), /*#__PURE__*/_react.default.createElement(_Footer.default, {
     className: "light"
   }));
 }
-},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/Button":"src/components/atom/Button/index.js","../../components/molecule/InputField":"src/components/molecule/InputField/index.js","../../icons":"src/icons/index.js","./style.scss":"src/screen/feedback/style.scss"}],"node_modules/react-slick/lib/initial-state.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/Button":"src/components/atom/Button/index.js","../../components/molecule/InputField":"src/components/molecule/InputField/index.js","../../icons":"src/icons/index.js","../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/screen/feedback/style.scss"}],"node_modules/react-slick/lib/initial-state.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47725,6 +47985,8 @@ var _reactRouterDom = require("react-router-dom");
 
 var _icons = require("../../../icons");
 
+var _fonts = _interopRequireDefault(require("../../../assets/fonts"));
+
 var _style = _interopRequireDefault(require("./style.scss"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -47789,7 +48051,9 @@ function TeamSlider() {
     className: "label"
   }, "Previous Research"), /*#__PURE__*/_react.default.createElement("p", {
     className: "data"
-  }, "A numerical study on two-phase core-annular", /*#__PURE__*/_react.default.createElement("br", null), " flows of waxy crude oil/water in inclined pipes.")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, null, "Know Juan More")), /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+  }, "A numerical study on two-phase core-annular", /*#__PURE__*/_react.default.createElement("br", null), " flows of waxy crude oil/water in inclined pipes.")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/team/juandelacruz"
+  }, "Know Juan More")), /*#__PURE__*/_react.default.createElement(_Avatar.default, {
     avatar: _avatar.default,
     size: "extra-lg spacing"
   })), /*#__PURE__*/_react.default.createElement("div", {
@@ -47820,12 +48084,14 @@ function TeamSlider() {
     className: "label"
   }, "Previous Research"), /*#__PURE__*/_react.default.createElement("p", {
     className: "data"
-  }, "A numerical study on two-phase core-annular", /*#__PURE__*/_react.default.createElement("br", null), " flows of waxy crude oil/water in inclined pipes.")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, null, "Know Juan More")), /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+  }, "A numerical study on two-phase core-annular", /*#__PURE__*/_react.default.createElement("br", null), " flows of waxy crude oil/water in inclined pipes.")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/team/juandelacruz"
+  }, "Know Juan More")), /*#__PURE__*/_react.default.createElement(_Avatar.default, {
     avatar: _avatar.default,
     size: "extra-lg spacing"
   }))));
 }
-},{"react":"node_modules/react/index.js","../../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","../../atom/Avatar":"src/components/atom/Avatar/index.js","react-slick":"node_modules/react-slick/lib/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../../icons":"src/icons/index.js","./style.scss":"src/components/molecule/TeamSlider/style.scss"}],"src/components/molecule/TeamCard/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","../../atom/Avatar":"src/components/atom/Avatar/index.js","react-slick":"node_modules/react-slick/lib/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../../icons":"src/icons/index.js","../../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/components/molecule/TeamSlider/style.scss"}],"src/components/molecule/TeamCard/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -47950,7 +48216,12 @@ module.exports = {
     "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
   }]
 };
-},{}],"src/screen/team/index.js":[function(require,module,exports) {
+},{}],"src/screen/team/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../assets/img/icon_team_sun-bulb.png":[["icon_team_sun-bulb.a4d5a34f.png","src/assets/img/icon_team_sun-bulb.png"],"src/assets/img/icon_team_sun-bulb.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/team/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47974,7 +48245,7 @@ var _avatar = _interopRequireDefault(require("../../assets/img/avatar.jpg"));
 
 var _content = require("./content.json");
 
-var _theme = _interopRequireDefault(require("../../theme.scss"));
+var _style = _interopRequireDefault(require("./style.scss"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47986,7 +48257,9 @@ function Team() {
     title: "Team"
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_TeamSlider.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "slider-content-container"
+  }, /*#__PURE__*/_react.default.createElement(_TeamSlider.default, null))), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "row"
@@ -48013,7 +48286,667 @@ function Team() {
     className: "semi-light"
   }));
 }
-},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/ReadMore":"src/components/atom/ReadMore/index.js","../../components/molecule/TeamSlider":"src/components/molecule/TeamSlider/index.js","../../components/molecule/TeamCard":"src/components/molecule/TeamCard/index.js","../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","./content.json":"src/screen/team/content.json","../../theme.scss":"src/theme.scss"}],"src/screen/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../components/atom/ReadMore":"src/components/atom/ReadMore/index.js","../../components/molecule/TeamSlider":"src/components/molecule/TeamSlider/index.js","../../components/molecule/TeamCard":"src/components/molecule/TeamCard/index.js","../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","./content.json":"src/screen/team/content.json","./style.scss":"src/screen/team/style.scss"}],"src/components/molecule/IndividualTeamCard/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/molecule/IndividualTeamCard/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = IndividualTeamCard;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _HorizontalDivider = _interopRequireDefault(require("../../atom/HorizontalDivider"));
+
+var _Avatar = _interopRequireDefault(require("../../atom/Avatar"));
+
+var _avatar = _interopRequireDefault(require("../../../assets/img/avatar.jpg"));
+
+var _style = _interopRequireDefault(require("./style.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function IndividualTeamCard() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "individual-team-container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "item-2"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-top-solo"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-left"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Role/ Position"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "Project Manager"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Highest Educational Attainment"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "M.S. Chemical Engineering"), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  }), /*#__PURE__*/_react.default.createElement("h3", {
+    className: "subTitle"
+  }, "About Juan"), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-lg"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-bottom-solo"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: ""
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))))));
+}
+},{"react":"node_modules/react/index.js","../../atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../atom/Avatar":"src/components/atom/Avatar/index.js","../../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","./style.scss":"src/components/molecule/IndividualTeamCard/style.scss"}],"src/screen/individualteam/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../assets/img/icon_researches_sun-bulb.png":[["icon_researches_sun-bulb.9179a22e.png","src/assets/img/icon_researches_sun-bulb.png"],"src/assets/img/icon_researches_sun-bulb.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/individualteam/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = IndividualTeam;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Footer = _interopRequireDefault(require("../../components/molecule/Footer"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _Avatar = _interopRequireDefault(require("../../components/atom/Avatar"));
+
+var _HorizontalDivider = _interopRequireDefault(require("../../components/atom/HorizontalDivider"));
+
+var _IndividualTeamCard = _interopRequireDefault(require("../../components/molecule/IndividualTeamCard"));
+
+var _Breadcrumbs = _interopRequireDefault(require("../../components/atom/Breadcrumbs"));
+
+var _avatar = _interopRequireDefault(require("../../assets/img/avatar.jpg"));
+
+var _style = _interopRequireDefault(require("./style.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function IndividualTeam() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement(_Breadcrumbs.default, {
+    breadcrumbs: "Team > Juan Dela Cruz",
+    title: "Team"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "main-content"
+  }, /*#__PURE__*/_react.default.createElement(_IndividualTeamCard.default, null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-member"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "intro"
+  }, "Get to know other members"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-member-content"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Role/ Position"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "Project Manager"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Highest Educational Attainment"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "M.S. Chemical Engineering"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Know Juan More"))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-member-content"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Role/ Position"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "Project Manager"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Highest Educational Attainment"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "M.S. Chemical Engineering"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Know Juan More"))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-member-content"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Role/ Position"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "Project Manager"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Highest Educational Attainment"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "M.S. Chemical Engineering"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Know Juan More"))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-member-content"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Role/ Position"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "Project Manager"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "role-label"
+  }, "Highest Educational Attainment"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "role"
+  }, "M.S. Chemical Engineering"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Know Juan More"))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })))))), /*#__PURE__*/_react.default.createElement(_Footer.default, {
+    className: "semi-light"
+  }));
+}
+},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../components/atom/Avatar":"src/components/atom/Avatar/index.js","../../components/atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../components/molecule/IndividualTeamCard":"src/components/molecule/IndividualTeamCard/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","./style.scss":"src/screen/individualteam/style.scss"}],"src/components/molecule/IndividualResearchCard/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/molecule/IndividualResearchCard/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = IndividualResearchCard;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _HorizontalDivider = _interopRequireDefault(require("../../atom/HorizontalDivider"));
+
+var _Avatar = _interopRequireDefault(require("../../atom/Avatar"));
+
+var _avatar = _interopRequireDefault(require("../../../assets/img/avatar.jpg"));
+
+var _style = _interopRequireDefault(require("./style.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function IndividualResearchCard() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "individual-research-container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "item-2"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-top-solo"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-left"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "upper-data"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left"
+  }, /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Volume"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Volume VII"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Featured In"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering Daily")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right"
+  }, /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Date of Publication"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "May 21, 2020"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Publisher"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Diliman Publishing House"))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "20px 0 30px 0"
+    }
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-bottom-solo"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "lower-data"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-sm"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "name"
+  }, "Dr. Jose Gabriel Buenavilla"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-sm"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "name"
+  }, "Dr. Jose Gabriel Buenavilla"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering")))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "abstract"
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "subTitle"
+  }, "Abstract"), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))))));
+}
+},{"react":"node_modules/react/index.js","../../atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../atom/Avatar":"src/components/atom/Avatar/index.js","../../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","./style.scss":"src/components/molecule/IndividualResearchCard/style.scss"}],"src/screen/individualresearch/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../assets/img/icon_researches_sun-bulb.png":[["icon_researches_sun-bulb.9179a22e.png","src/assets/img/icon_researches_sun-bulb.png"],"src/assets/img/icon_researches_sun-bulb.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/individualresearch/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = IndividualResearch;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Footer = _interopRequireDefault(require("../../components/molecule/Footer"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _Avatar = _interopRequireDefault(require("../../components/atom/Avatar"));
+
+var _HorizontalDivider = _interopRequireDefault(require("../../components/atom/HorizontalDivider"));
+
+var _IndividualResearchCard = _interopRequireDefault(require("../../components/molecule/IndividualResearchCard"));
+
+var _Breadcrumbs = _interopRequireDefault(require("../../components/atom/Breadcrumbs"));
+
+var _avatar = _interopRequireDefault(require("../../assets/img/avatar.jpg"));
+
+var _style = _interopRequireDefault(require("./style.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function IndividualResearch() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement(_Breadcrumbs.default, {
+    breadcrumbs: "Researches > Research Title",
+    title: "Researches"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "main-content"
+  }, /*#__PURE__*/_react.default.createElement(_IndividualResearchCard.default, null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-research"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "intro"
+  }, "Other Researches"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-member-content"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering"))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-member-content"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering"))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-member-content"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "members"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "left-side"
+  }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    avatar: _avatar.default,
+    size: "extra-sm"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "right-side"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "name"
+  }, "Juan Dela Cruz"), /*#__PURE__*/_react.default.createElement("sub", {
+    className: "label"
+  }, "Field of Study"), /*#__PURE__*/_react.default.createElement("h5", {
+    className: "text"
+  }, "Chemical Engineering"))), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })))))), /*#__PURE__*/_react.default.createElement(_Footer.default, {
+    className: "semi-light"
+  }));
+}
+},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../components/atom/Avatar":"src/components/atom/Avatar/index.js","../../components/atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../components/molecule/IndividualResearchCard":"src/components/molecule/IndividualResearchCard/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../assets/img/avatar.jpg":"src/assets/img/avatar.jpg","./style.scss":"src/screen/individualresearch/style.scss"}],"src/components/molecule/IndividualNewsCard/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/molecule/IndividualNewsCard/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = IndividualNewsCard;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _HorizontalDivider = _interopRequireDefault(require("../../atom/HorizontalDivider"));
+
+var _fonts = _interopRequireDefault(require("../../../assets/fonts"));
+
+var _style = _interopRequireDefault(require("./style.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function IndividualNewsCard() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "individual-news-container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "item-2"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-top-solo"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-left"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "upper-data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "sub-title"
+  }, "Name of Author \u2022 Data Published")), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "20px 0 0 0"
+    }
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-bottom-solo"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "abstract"
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."))))));
+}
+},{"react":"node_modules/react/index.js","../../atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/components/molecule/IndividualNewsCard/style.scss"}],"src/screen/individualnews/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../assets/img/icon_researches_sun-bulb.png":[["icon_researches_sun-bulb.9179a22e.png","src/assets/img/icon_researches_sun-bulb.png"],"src/assets/img/icon_researches_sun-bulb.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/screen/individualnews/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = IndividualNews;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Footer = _interopRequireDefault(require("../../components/molecule/Footer"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _HorizontalDivider = _interopRequireDefault(require("../../components/atom/HorizontalDivider"));
+
+var _IndividualNewsCard = _interopRequireDefault(require("../../components/molecule/IndividualNewsCard"));
+
+var _Breadcrumbs = _interopRequireDefault(require("../../components/atom/Breadcrumbs"));
+
+var _fonts = _interopRequireDefault(require("../../assets/fonts"));
+
+var _style = _interopRequireDefault(require("./style.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function IndividualNews() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement(_Breadcrumbs.default, {
+    breadcrumbs: "News > News Article",
+    title: "News"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "main-content"
+  }, /*#__PURE__*/_react.default.createElement(_IndividualNewsCard.default, null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-news"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "intro"
+  }, "Other News"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-news-content"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "lower-data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "sub-title"
+  }, "Name of Author \u2022 Data Published"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Read more")), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-news-content"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "lower-data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "sub-title"
+  }, "Name of Author \u2022 Data Published"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Read more")), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-news-content"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "lower-data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "sub-title"
+  }, "Name of Author \u2022 Data Published"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Read more")), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-news-content"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "lower-data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "sub-title"
+  }, "Name of Author \u2022 Data Published"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Read more")), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "other-news-content"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title"
+  }, "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "lower-data"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "sub-title"
+  }, "Name of Author \u2022 Data Published"), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "read-more"
+  }, "Read more")), /*#__PURE__*/_react.default.createElement(_HorizontalDivider.default, {
+    style: {
+      margin: "10px 0 10px 0"
+    }
+  })))))), /*#__PURE__*/_react.default.createElement(_Footer.default, {
+    className: "semi-light"
+  }));
+}
+},{"react":"node_modules/react/index.js","../../components/molecule/Footer":"src/components/molecule/Footer/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../../components/atom/HorizontalDivider":"src/components/atom/HorizontalDivider/index.js","../../components/molecule/IndividualNewsCard":"src/components/molecule/IndividualNewsCard/index.js","../../components/atom/Breadcrumbs":"src/components/atom/Breadcrumbs/index.js","../../assets/fonts":"src/assets/fonts/index.scss","./style.scss":"src/screen/individualnews/style.scss"}],"src/screen/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48033,11 +48966,19 @@ var _about = _interopRequireDefault(require("./about"));
 
 var _news = _interopRequireDefault(require("./news"));
 
+var _partnership = _interopRequireDefault(require("./partnership"));
+
 var _registration = _interopRequireDefault(require("./registration"));
 
 var _feedback = _interopRequireDefault(require("./feedback"));
 
 var _team = _interopRequireDefault(require("./team"));
+
+var _individualteam = _interopRequireDefault(require("./individualteam"));
+
+var _individualresearch = _interopRequireDefault(require("./individualresearch"));
+
+var _individualnews = _interopRequireDefault(require("./individualnews"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48050,22 +48991,34 @@ function Screen() {
     path: "/about",
     component: _about.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/researches/researchtitle",
+    component: _individualresearch.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/researches",
     component: _researches.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/feedback",
     component: _feedback.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/team/juandelacruz",
+    component: _individualteam.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/team",
     component: _team.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/news/newsarticle",
+    component: _individualnews.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/news",
     component: _news.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/partnership",
+    component: _partnership.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Redirect, {
     to: "/"
   }))));
 }
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../components/molecule/Header/":"src/components/molecule/Header/index.js","./researches":"src/screen/researches/index.js","./about":"src/screen/about/index.js","./news":"src/screen/news/index.js","./registration":"src/screen/registration/index.js","./feedback":"src/screen/feedback/index.js","./team":"src/screen/team/index.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../components/molecule/Header/":"src/components/molecule/Header/index.js","./researches":"src/screen/researches/index.js","./about":"src/screen/about/index.js","./news":"src/screen/news/index.js","./partnership":"src/screen/partnership/index.js","./registration":"src/screen/registration/index.js","./feedback":"src/screen/feedback/index.js","./team":"src/screen/team/index.js","./individualteam":"src/screen/individualteam/index.js","./individualresearch":"src/screen/individualresearch/index.js","./individualnews":"src/screen/individualnews/index.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48122,7 +49075,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52831" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62342" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -49,6 +49,24 @@ body{
     right: auto;
 }
 
+.item-3{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    width: 50%;
+    left: auto;
+    right: auto;
+}
+
+.item-2{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    width: 100%;
+    left: auto;
+    right: auto;
+}
+
 .full-width{
     width: 100%;
 }
@@ -67,6 +85,10 @@ body{
 @media only screen and (max-width: 400px){
 
     .item{
+        width: 100%;
+    }
+
+    .item-3{
         width: 100%;
     }
 }

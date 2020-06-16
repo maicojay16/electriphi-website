@@ -1,0 +1,131 @@
+.main-content{
+    display: flex;
+    background-image: url(../../assets/img/icon_researches_sun-bulb.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 25% 64%;
+    background-position: 89% 82%;
+    .other-member{
+        width: 40%;
+        margin-left: 2.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1.intro{
+            font-size: 22px;
+            color: #616161;
+            margin: 0 0 40px 0;
+            font-family: 'Avenir Black' , Arial, sans-serif;
+        }
+        .other-member-content{
+            width: 90%;
+            margin-bottom: 20px;
+            .members{
+                display: flex;
+                .left-side{
+                    img{
+                        margin: 0 30px 15px 0;
+                    }
+
+                }
+                .right-side{
+                    h1.name{
+                        font-size: 20px;
+                        margin: 0;
+                        color: #616161;
+                        letter-spacing: 1px;
+                        font-family: 'Avenir Black' , Arial, sans-serif;
+                    }
+                    sub.role-label, sub.role-education{
+                        font-size: 8px;
+                        color: #bfbfbf;
+                        font-family: 'Avenir Heavy' , Arial, sans-serif;
+                    }
+                    h5.role ,h5.education{
+                        font-size: 10px;
+                        margin: 0 0 2px 0;
+                        color: #616161;
+                        font-family: 'Avenir Heavy' , Arial, sans-serif;
+                    }  
+                    .read-more{
+                        color: #1592e6;
+                        font-size: 9px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        margin: 10px 0 5px 0;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main-content{
+        display: flex;
+        background-size: 100%;
+        .other-member{
+            width: 100%;
+            margin-left: 2.5%;
+            h1.intro{
+                font-size: 3vw;
+                margin: 0 0 4vw 0;
+            }
+            .other-member-content{
+                width: 90%;
+                margin-bottom: 3vw;
+                .members{
+                    .left-side{
+                        img{
+                            margin: 0 3vw 2vw 0;
+                        }
+    
+                    }
+                    .right-side{
+                        h1.name{
+                            font-size: 2.5vw;
+                        }
+                        sub.role-label, sub.role-education{
+                            font-size: 1.5vw;
+                        }
+                        h5.role ,h5.education{
+                            font-size: 1.5vw;
+                        }  
+                        .read-more{
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main-content{
+        .other-member{
+            h1.intro{
+                font-size: 4vw;
+            }
+            .other-member-content{
+                .members{
+                    .right-side{
+                        h1.name{
+                            font-size: 3.5vw;
+                        }
+                        sub.role-label, sub.role-education{
+                            font-size: 2.5vw;
+                        }
+                        h5.role ,h5.education{
+                            font-size: 2.5vw;
+                        }  
+                        .read-more{
+                            font-size: 2.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

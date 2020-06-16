@@ -1,0 +1,114 @@
+@import "./src/theme";
+
+.individual-news-container{
+    width: 100%;
+    .card{
+        box-shadow: $lightBoxShadow;
+        background-color: $lightColor;
+        padding: 30px 40px 30px 40px;
+        border-radius: 10px;
+        color: $primaryColor;
+        margin-bottom: 20px;
+
+        .card-top-solo{
+            display: flex;
+            flex-direction: row;
+            .card-left{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                h1.title{
+                    font-size: 26px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #1592e6;
+                    font-family: 'Avenir Black' , Arial, sans-serif;
+                }
+                .upper-data{
+                    display: flex;
+                    h5.sub-title{
+                        color: #616161;
+                        font-size: 12px;
+                        margin: 0;
+                        font-family: 'Avenir Heavy' , Arial, sans-serif;
+                    }
+                }
+            }
+        }
+        .card-bottom-solo{
+           .abstract{
+                p{
+                    color: #616161;
+                    font-size: 14px;
+                    margin: 30px 0 30px 0;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
+                }
+           }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .individual-news-container{
+        .card{
+            padding: 3vw 4vw 3vw 4vw;
+            margin-bottom: 2vw;
+    
+            .card-top-solo{
+                .card-left{
+                    margin-right: 2vw;
+                    h1.title{
+                        font-size: 3.5vw;
+                    }
+                    .upper-data{
+                        h5.sub-title{
+                            font-size: 2vw;
+                        }
+                    }
+                }
+            }
+            .card-bottom-solo{
+               .abstract{
+                    p{
+                        font-size: 2vw;
+                        margin: 3vw 0 3vw 0;
+                    }
+               }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    .individual-news-container{
+        .card{
+            padding: 3vw 4vw 3vw 4vw;
+            margin-bottom: 3vw;
+            .card-top-solo{
+                .card-left{
+                    margin-right: 2vw;
+                    h1.title{
+                        font-size: 4.5vw;
+                    }
+                    .upper-data{
+                        h5.sub-title{
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+            .card-bottom-solo{
+               .abstract{
+                    p{
+                        font-size: 3vw;
+                        margin: 3vw 0 3vw 0;
+                    }
+               }
+            }
+        }
+    }
+    
+}

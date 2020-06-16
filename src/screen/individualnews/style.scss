@@ -1,0 +1,109 @@
+.main-content{
+    display: flex;
+    background-image: url(../../assets/img/icon_researches_sun-bulb.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 25% 64%;
+    background-position: 89% 82%;
+    .other-news{
+        width: 37.5%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1.intro{
+            font-size: 22px;
+            color: #616161;
+            margin: 0 0 30px 0;
+            font-family: 'Avenir Black' , Arial, sans-serif;
+        }
+        .other-news-content{
+            width: 90%;
+            margin-bottom: 20px;
+            h1.title{
+                font-size: 18px;
+                color: #a4a4a4;
+                margin: 0 0 20px 0;
+                font-family: 'Avenir Heavy' , Arial, sans-serif;
+            }
+            .lower-data{
+                h5.sub-title{
+                    color: #616161;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin: 0;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
+                }
+                .read-more{
+                    color: #1592e6;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    margin: 15px 0 15px 0;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main-content{
+        flex-direction: column;
+        background-size: 100%;
+        .other-news{
+            width: 100%;
+            margin-left: 5%;
+            h1.intro{
+                font-size: 3vw;
+                margin: 0 0 3vw 0;
+            }
+            .other-news-content{
+                margin-bottom: 2vw;
+                h1.title{
+                    font-size: 2vw;
+                    margin: 0 0 2vw 0;
+                }
+                .lower-data{
+                    h5.sub-title{
+                        font-size: 2vw;
+                    }
+                    .read-more{
+                        font-size: 2vw;
+                        margin: 2vw 0 2vw 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .main-content{
+        flex-direction: column;
+        background-size: 100%;
+        .other-news{
+            h1.intro{
+                font-size: 4vw;
+                margin: 0 0 4vw 0;
+            }
+            .other-news-content{
+                margin-bottom: 3vw;
+                h1.title{
+                    font-size: 3vw;
+                    margin: 0 0 3vw 0;
+                }
+                .lower-data{
+                    h5.sub-title{
+                        font-size: 3vw;
+                    }
+                    .read-more{
+                        font-size: 3vw;
+                        margin: 3vw 0 3vw 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

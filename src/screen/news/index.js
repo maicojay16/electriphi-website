@@ -6,6 +6,7 @@ import ReadMore from "@atom/ReadMore/"
 import coverImage from "@assets/img/news_background.png"
 import IntroSection from "./section/IntroSection.js"
 import { researches } from "./content.json"
+import fonts from "@assets/fonts/"
 import style from "@screen/news/style.scss"
 
 export default function News() {

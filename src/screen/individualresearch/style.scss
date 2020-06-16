@@ -1,0 +1,133 @@
+.main-content{
+    display: flex;
+    background-image: url(../../assets/img/icon_researches_sun-bulb.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 25% 64%;
+    background-position: 89% 82%;
+    .other-research{
+        width: 37.5%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1.intro{
+            font-size: 22px;
+            color: #616161;
+            margin: 0 0 30px 0;
+            font-family: 'Avenir Black' , Arial, sans-serif;
+        }
+        .other-member-content{
+            width: 90%;
+            margin-bottom: 20px;
+            h1.title{
+                font-size: 18px;
+                color: #a4a4a4;
+                margin: 0 0 20px 0;
+                font-family: 'Avenir Black' , Arial, sans-serif;
+            }
+            .members{
+                margin-bottom: 10px;
+                display: flex;
+                .left-side{
+                    img{
+                        margin: 0 15px 5px 0;
+                    }
+
+                }
+                .right-side{
+                    h1.name{
+                        font-size: 12px;
+                        margin: 0;
+                        color: #616161;
+                        font-family: 'Avenir Heavy' , Arial, sans-serif;
+                    }
+                    sub.label{
+                        font-size: 10px;
+                        color: #bfbfbf;
+                        font-family: 'Avenir Heavy' , Arial, sans-serif;
+                    }
+                    h5.text{
+                        font-size: 11px;
+                        margin: 2px 0 0 0;
+                        color: #616161;
+                        font-family: 'Avenir Heavy' , Arial, sans-serif;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    .main-content{
+        background-size: 100%;
+        .other-research{
+            width: 100%;
+            h1.intro{
+                font-size: 3vw;
+                margin: 0 0 3vw 0;
+            }
+            .other-member-content{
+                width: 90%;
+                margin-bottom: 2vw;
+                h1.title{
+                    font-size: 2vw;
+                }
+                .members{
+                    margin-bottom: 1vw;
+                    .left-side{
+                        img{
+                            margin: 0 2vw 2vw 0;
+                        }
+    
+                    }
+                    .right-side{
+                        h1.name{
+                            font-size: 2vw;
+                        }
+                        sub.label{
+                            font-size: 1vw;
+                        }
+                        h5.text{
+                            font-size: 1vw;
+                            margin: 2px 0 0 0;
+                        }  
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    .main-content{
+        background-size: 100%;
+        .other-research{
+            h1.intro{
+                font-size: 4vw;
+            }
+            .other-member-content{
+                h1.title{
+                    font-size: 3vw;
+                }
+                .members{
+                    .right-side{
+                        h1.name{
+                            font-size: 3vw;
+                        }
+                        sub.label{
+                            font-size: 2vw;
+                        }
+                        h5.text{
+                            font-size: 2vw;
+                        }  
+                    }
+                }
+            }
+        }
+    }
+    
+}

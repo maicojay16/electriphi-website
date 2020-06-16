@@ -1,22 +1,29 @@
 
 .breadcrumbs-content{
-    padding-top: 40px;
+    padding-top: 20px;
     .breadcrumbs{
         display: flex;
         align-items: center;
         margin: 10px 10px;
         color: #616161;
-        sub{
-            font-size: 10px;
+        font-family: 'Avenir Black' , Arial, sans-serif;
+        img.breadcrumbs-icon{
+            width: 10px;
+            height: auto;
+            margin-right: 5px;
         }
         svg{
-            color: rgb(233, 80, 75);
-            font-size: 16px;
+            color: #757575;
+            font-size: 10px;
+        }
+        sub{
+            font-size: 10px;
         }
     }
     h1{
         color: #616161;
         margin: 10px 10px 20px 10px;
         font-size: 28px;
+        font-family: 'Avenir Medium' , Arial, sans-serif;
     }
 }

@@ -13,14 +13,17 @@
             font-size: 21px;
             font-weight: 600;
             text-transform: capitalize;
+            font-family: 'Avenir Black' , Arial, sans-serif;
         }
         h5.sub-title{
             font-size: $fontNormal;
+            font-family: 'Avenir Heavy' , Arial, sans-serif;
         }
         p{
             font-size: $fontNormal;
             line-height: 20px;
             text-align: justify;
+            font-family: 'Avenir Heavy' , Arial, sans-serif;
         }
         .read-more{
             color: $secondaryColor;

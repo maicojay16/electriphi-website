@@ -1,0 +1,152 @@
+@import "./src/theme";
+
+.individual-team-container{
+    width: 100%;
+    .card{
+        box-shadow: $lightBoxShadow;
+        background-color: $lightColor;
+        padding: 20px 20px 20px 20px;
+        border-radius: 10px;
+        color: $primaryColor;
+        margin-bottom: 20px;
+
+        .card-top-solo{
+            display: flex;
+            flex-direction: row;
+            .card-left{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                h1.name{
+                    font-size: 26px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #616161;
+                    font-family: 'Avenir Black' , Arial, sans-serif;
+                }
+                sub.role-label, sub.education{
+                    font-size: 15px;
+                    color: #bfbfbf;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
+                }
+                h5.role ,h5.education{
+                    font-size: 17px;
+                    margin: 5px 0 10px 0;
+                    color: #616161;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
+                }  
+                h3.subTitle{
+                    margin: 10px 0 10px 0;
+                    font-size: 15px;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
+                }
+                p{
+                    font-size: 15px;
+                    margin: 0;
+                    line-height: 20px;
+                    text-align: justify;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
+                }
+            }
+        }
+        .card-bottom-solo{
+            p{
+                color: #616161;
+                font-size: 14px;
+                margin: 30px 0 30px 0;
+                font-family: 'Avenir Heavy' , Arial, sans-serif;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+
+    .individual-team-container{
+        width: 100%;
+        .card{
+            padding: 2vw 2vw 2vw 2vw;
+            margin-bottom: 2vw;
+
+            .card-top-solo{
+                img#avatar.extra-lg{
+                    width: 250px;
+                    height: 250px;
+                }
+                .card-left{
+                    width: 60%;
+                    margin-right: 2vw;
+                    h1.name{
+                        font-size: 3vw;
+                        font-weight: 600;
+                    }
+                    sub.role-label, sub.education{
+                        font-size: 2vw;
+                    }
+                    h5.role ,h5.education{
+                        font-size: 2vw;
+                        margin: 0.5vw 0 1vw 0;
+                    }  
+                    h3.subTitle{
+                        margin: 1vw 0 1vw 0;
+                        font-size: 2vw;
+                    }
+                    p{
+                        font-size: 2vw;
+                        margin: 0;
+                        line-height: 2vw;
+                    }
+                }
+            }
+            .card-bottom-solo{
+                p{
+                    font-size: 2vw;
+                    margin: 3vw 0 3vw 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .individual-team-container{
+        width: 100%;
+        .card{
+
+            .card-top-solo{
+                flex-direction: column;
+                img#avatar.extra-lg{
+                    margin: 2vw auto;
+                }
+                .card-left{
+                    width: 100%;
+                    h1.name{
+                        font-size: 4.5vw;
+                    }
+                    sub.role-label, sub.education{
+                        font-size: 3vw;
+                    }
+                    h5.role ,h5.education{
+                        font-size: 3vw;
+                    }  
+                    h3.subTitle{
+                        font-size: 3vw;
+                    }
+                    p{
+                        font-size: 3vw;
+                        line-height: 3vw;
+                    }
+                }
+            }
+            .card-bottom-solo{
+                p{
+                    font-size: 3vw;
+                    margin: 4vw 0 4vw 0;
+                }
+            }
+        }
+    }
+}

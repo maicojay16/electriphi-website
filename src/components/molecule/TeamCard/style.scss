@@ -15,6 +15,7 @@
                 sub.label{
                     font-size: 8px;
                     color: #b5b5b5;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
                 }
                 p.data{
                     margin: 0;
@@ -22,52 +23,70 @@
                     font-size: 14px;
                     color: #616161;
                     font-weight: 600;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
                 }
             }
             .role{
                 sub.label{
                     font-size: 8px;
                     color: #b5b5b5;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
                 }
                 p.data{
                     margin: 0;
                     font-size: 10px;
                     color: #616161;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
                 }
             }
             .education{
                 sub.label{
                     font-size: 8px;
                     color: #b5b5b5;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
                 }
                 p.data{
                     margin: 0;
                     font-size: 10px;
                     color: #616161;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
                 }
             }
             .research{
                 sub.label{
                     font-size: 8px;
                     color: #b5b5b5;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
                 }
                 p.data{
                     margin: 0;
                     font-size: 10px;
                     color: #616161;
                     line-height: 15px;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
                 }
             }
         }
     }
     h5.sub-title{
         font-size: $fontNormal;
+        font-family: 'Avenir Heavy' , Arial, sans-serif;
     }
     p{
         font-size: 10px;
         line-height: 20px;
         text-align: justify;
         color: #616161;
+        font-family: 'Avenir Heavy' , Arial, sans-serif;
+    }
+
+    .read-more{
+        color: #1592e6;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 15px 0 15px 0;
+        display: block;
     }
   
 }

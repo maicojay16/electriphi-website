@@ -8,6 +8,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import AttachmentIcon from '@material-ui/icons/Attachment';
 
 export {
     LinkIcon,
@@ -19,5 +20,6 @@ export {
     CallIcon,
     MenuIcon,
     CloseIcon,
-    AccountCircleIcon
+    AccountCircleIcon,
+    AttachmentIcon
 }

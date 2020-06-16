@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 46vw;
+        height: 47vw;
         color: #fff;
         .header-info{
             display: flex;
@@ -21,12 +21,14 @@
                 height: auto;
             }
             h3{
-                font-size: 40px;
+                font-size: 50px;
                 margin: 20px 0 10px 0;
+                font-family: 'Avenir Black' , Arial, sans-serif;
             }
             p{
                 margin: 0;
-                font-size: 12px;
+                font-size: 15px;
+                font-family: 'Avenir Heavy' , Arial, sans-serif;
             }
         }
     }
@@ -74,7 +76,7 @@
                     margin: 2vw 0 1vw 0;
                 }
                 p{
-                    margin: 0 10vw;
+                    margin: 0 5vw;
                     font-size: 3vw;
                 }
             }

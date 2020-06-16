@@ -1,4 +1,4 @@
-input[type=text],input[type=password]{
+input[type=text], input[type=password], input[type=file] {
     background-color: transparent;
     border: none;
     border-radius: 0;
@@ -17,4 +17,5 @@ input[type=text],input[type=password]{
     transition: border .3s, -webkit-box-shadow .3s;
     transition: box-shadow .3s, border .3s;
     transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    color: #68a4f3;
 }

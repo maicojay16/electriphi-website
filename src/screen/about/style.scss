@@ -1,44 +1,171 @@
-.about-body{
-    background-color: #fff;
+.about-page{
+    .about-body{
+        background-color: #fff;
+
+        .about-content-first{
+            display: flex;
+            padding-top: 100px;
+            padding-bottom: 50px;
+            .data{
+                padding: 40px 0 40px 0;
+                margin-right: 5%;
+                h1{
+                    color: #616161;
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                    color: #616161;
+                    font-family: 'Avenir Black' , Arial, sans-serif;
+                }
+                p{
+                    text-align: justify;
+                    line-height: 2vw;
+                    color: #616161;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
+                }
+            }
+            img.about-content-img{
+                width: 55%;
+                height: auto;
+            }
+        }
+
+        .about-content-second{
+            display: flex;
+            flex-direction: row-reverse;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .data{
+                padding: 40px 0 40px 0;
+                margin-left: 5%;
+                h1{
+                    color: #616161;
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                    color: #616161;
+                    font-family: 'Avenir Black' , Arial, sans-serif;
+                }
+                p{
+                    text-align: justify;
+                    line-height: 2vw;
+                    color: #616161;
+                    font-family: 'Avenir Heavy' , Arial, sans-serif;
+                }
+            }
+            img.about-content-img{
+                width: 55%;
+                height: auto;
+            }
+        }
+
+        .link-to-partnership{
+            .partner-link{
+                margin-top: 20px;
+                width: 70%;
+                height: auto;
+            }
+        }
+    }
 }
 
-.about-content{
-    padding: 8% 15% 8% 15%;
-    h1{
-        font-size: 40px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: #333;
-    }
-    p{
-        font-size: 16px;
-        color: #333;
-    }
-}
+
+
 
 @media only screen and (max-width: 768px){
-    .about-content{
-        padding: 6vw 4vw;
-        h1{
-            font-size: 4vw;
-        }
-        p{
-            font-size: 3vw;
-            color: #333;
+    .about-page{
+        .about-body{
+            .about-content-first{
+                display: flex;
+                flex-direction: column;
+                padding-top: 10vw;
+                padding-bottom: 5vw;
+                .data{
+                    padding: 4vw 0 4vw 0;
+                    margin-right: 5%;
+                    h1{
+                        font-size: 3vw;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        font-size: 2vw;
+                        line-height: 2.5vw;
+                    }
+                }
+                img.about-content-img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+            .about-content-second{
+                display: flex;
+                flex-direction: column;
+                padding-top: 5vw;
+                padding-bottom: 5vw;
+                .data{
+                    padding: 4vw 0 4vw 0;
+                    margin-right: 5%;
+                    margin-left: 0%;
+                    h1{
+                        font-size: 3vw;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        font-size: 2vw;
+                        line-height: 2.5vw;
+                    }
+                }
+                img.about-content-img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+            .link-to-partnership{
+                .partner-link{
+                    margin-top: 2vw;
+                    width: 80%;
+                    height: auto;
+                }
+            }
         }
     }
     
 }
 
 @media only screen and (max-width: 400px){
-    .about-content{
-        padding: 7vw 5vw;
-        h1{
-            font-size: 5vw;
-        }
-        p{
-            font-size: 4vw;
-            color: #333;
+    .about-page{
+        .about-body{
+            .about-content-first{
+                .data{
+                    h1{
+                        font-size: 4vw;
+                    }
+                    p{
+                        font-size: 3vw;
+                        line-height: 3.5vw;
+                    }
+                }
+                img.about-content-img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+            .about-content-second{
+                .data{
+                    h1{
+                        font-size: 4vw;
+                    }
+                    p{
+                        font-size: 3vw;
+                        line-height: 3.5vw;
+                    }
+                }
+                img.about-content-img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
     }
     

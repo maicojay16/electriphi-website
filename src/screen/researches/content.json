@@ -1,64 +1,48 @@
 {
     "researches": [
       {
-        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "subTitle": "Volume • Publisher • Date Published",
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "link": "Lorem ipsum dolor sit amet, consectetur...",
-        "name": "Juan Dela Cruz",
-        "author": "Author",
-        "study": "Field of Study",
-        "subject": "Lorem Ipsum Dolore"
+        "title": "Journal Title Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum dolor sit amet.",
+        "volume": "Volume VII",
+        "featured": "Chemical Engineering Daily",
+        "date": "May 21, 2020",
+        "publisher": "Diliman Publishing House",
+        "name": "Dr. Jose Gabriel Buenavilla",
+        "field": "Chemical Engineering",
+        "subTitle": "Abstract",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
       },
       {
-        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "subTitle": "Volume • Publisher • Date Published",
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "link": "Lorem ipsum dolor sit amet, consectetur...",
-        "name": "Juan Dela Cruz",
-        "author": "Author",
-        "study": "Field of Study",
-        "subject": "Lorem Ipsum Dolore"
+        "title": "Journal Title Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum dolor sit amet.",
+        "volume": "Volume VII",
+        "featured": "Chemical Engineering Daily",
+        "date": "May 21, 2020",
+        "publisher": "Diliman Publishing House",
+        "name": "Dr. Jose Gabriel Buenavilla",
+        "field": "Chemical Engineering",
+        "subTitle": "Abstract",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
       },
       {
-        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "subTitle": "Volume • Publisher • Date Published",
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "link": "Lorem ipsum dolor sit amet, consectetur...",
-        "name": "Juan Dela Cruz",
-        "author": "Author",
-        "study": "Field of Study",
-        "subject": "Lorem Ipsum Dolore"
+        "title": "Journal Title Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum dolor sit amet.",
+        "volume": "Volume VII",
+        "featured": "Chemical Engineering Daily",
+        "date": "May 21, 2020",
+        "publisher": "Diliman Publishing House",
+        "name": "Dr. Jose Gabriel Buenavilla",
+        "field": "Chemical Engineering",
+        "subTitle": "Abstract",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
       },
       {
-        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "subTitle": "Volume • Publisher • Date Published",
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "link": "Lorem ipsum dolor sit amet, consectetur...",
-        "name": "Juan Dela Cruz",
-        "author": "Author",
-        "study": "Field of Study",
-        "subject": "Lorem Ipsum Dolore"
-      },
-      {
-        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "subTitle": "Volume • Publisher • Date Published",
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "link": "Lorem ipsum dolor sit amet, consectetur...",
-        "name": "Juan Dela Cruz",
-        "author": "Author",
-        "study": "Field of Study",
-        "subject": "Lorem Ipsum Dolore"
-      },
-      {
-        "title": "Journal Title Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "subTitle": "Volume • Publisher • Date Published",
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        "link": "Lorem ipsum dolor sit amet, consectetur...",
-        "name": "Juan Dela Cruz",
-        "author": "Author",
-        "study": "Field of Study",
-        "subject": "Lorem Ipsum Dolore"
+        "title": "Journal Title Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Lorem ipsum dolor sit amet.",
+        "volume": "Volume VII",
+        "featured": "Chemical Engineering Daily",
+        "date": "May 21, 2020",
+        "publisher": "Diliman Publishing House",
+        "name": "Dr. Jose Gabriel Buenavilla",
+        "field": "Chemical Engineering",
+        "subTitle": "Abstract",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
       }
     ]
   }

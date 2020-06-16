@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { ChevronRightIcon, LinkIcon } from "@icons"
 import HorizontalDivider from "@atom/HorizontalDivider/"
+import fonts from "@assets/fonts/"
 import style from "./style.scss";
 
 export default function News({ title, subTitle, excerpt, cover }) {
@@ -15,7 +15,7 @@ export default function News({ title, subTitle, excerpt, cover }) {
                     <HorizontalDivider />
                     <p>{excerpt}</p>
                     <NavLink to={"/"} className="read-more">
-                        Read More <ChevronRightIcon />
+                        Read More
                     </NavLink>
                 </div>
             </div>

@@ -16,6 +16,7 @@ export default function Footer({ className }) {
                     <li><Link className={className} to="/researches">Researches</Link></li>
                     <li><Link className={className} to="/about">About</Link></li>
                     <li><Link className={className} to="/feedback">Feedback</Link></li>
+                    <li><Link className={className} to="/partnership">Partnership</Link></li>
                     <li><Link className={className} to="/">Contact Us</Link></li>
                 </ul>
             </div>

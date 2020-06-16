@@ -4,6 +4,7 @@ import Avatar from "@atom/Avatar/"
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { ChevronRightIcon, ChevronLeftIcon } from "@icons";
+import fonts from "@assets/fonts/"
 import style from "@molecule/TeamSlider/style.scss"
 
 
@@ -48,7 +49,7 @@ export default function TeamSlider() {
                             <sub className="label">Previous Research</sub>
                             <p className="data">A numerical study on two-phase core-annular<br /> flows of waxy crude oil/water in inclined pipes.</p>
                         </div>
-                        <Link>Know Juan More</Link>
+                        <Link to="/team/juandelacruz">Know Juan More</Link>
                     </div>
                     <Avatar avatar={avatarImage} size="extra-lg spacing" />
                 </div>
@@ -70,7 +71,7 @@ export default function TeamSlider() {
                             <sub className="label">Previous Research</sub>
                             <p className="data">A numerical study on two-phase core-annular<br /> flows of waxy crude oil/water in inclined pipes.</p>
                         </div>
-                        <Link>Know Juan More</Link>
+                        <Link to="/team/juandelacruz">Know Juan More</Link>
                     </div>
                     <Avatar avatar={avatarImage} size="extra-lg spacing" />
                 </div>

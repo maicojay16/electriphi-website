@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "@atom/Input/"
+import fonts from "@assets/fonts/"
 import style from "./style.scss";
 
 export default function InputField({ type, name, labelFor, label }) {

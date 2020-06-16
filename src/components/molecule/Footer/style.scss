@@ -88,12 +88,7 @@ footer.light{
                 }
            }
             ul {
-                display: flex;
-                width: 100%;
-                justify-content: flex-end;
-                padding-inline-start: 0;
-                margin: 10px;
-                justify-content: center;
+                display: none;
                 li{
                     a{
                         font-size: 1.5vw;
@@ -115,6 +110,7 @@ footer.light{
                 }
            }
             ul {
+                display: none;
                 li{
                     a{
                         font-size: 2.2vw;

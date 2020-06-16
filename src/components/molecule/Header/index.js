@@ -32,6 +32,7 @@ export default function Header() {
                     <li><Link to="/researches">Researches</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/feedback">Feedback</Link></li>
+                    <li><Link to="/partnership">Partnership</Link></li>
                     <li><Link to="/">Contact Us</Link></li>
                     <li className="userRegister"><Link><AccountCircleIcon/>Login/Register</Link></li>
                 </ul>

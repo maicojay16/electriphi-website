@@ -3,8 +3,25 @@ import Footer from '@molecule/Footer/'
 import Breadcrumbs from "@atom/Breadcrumbs/"
 import Button from "@atom/Button/"
 import InputField from "@molecule/InputField/"
-import { LocationOnIcon, EmailIcon, CallIcon } from "@icons"
+import { LocationOnIcon, EmailIcon, CallIcon, AttachmentIcon } from "@icons"
+import fonts from "@assets/fonts/"
 import style from "./style.scss"
+
+
+function updateList() {
+    var input = document.getElementById('file');
+    var output = document.getElementById('fileList');
+  
+    output.innerHTML = '<ul>';
+    for (var i = 0; i < input.files.length; ++i) {
+      output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+    }
+    output.innerHTML += '</ul>';
+}
+
+function uploadItem() {
+    document.getElementById('file').click()
+}
 
 export default function Feedback() {
     return (
@@ -44,8 +61,19 @@ export default function Feedback() {
                                     </div>
                                     <InputField type="text" name="firstname" labelFor="firstname" label="Firstname" />
                                     <InputField type="text" name="lastname" labelFor="lastname" label="Lastname" />
-                                    <InputField type="text" name="lastname" labelFor="lastname" label="What's your email?" />
-                                    <InputField type="text" name="lastname" labelFor="lastname" label="Go ahead we're listening" />
+                                    <InputField type="text" name="lastname" labelFor="lastname" label="Email" />
+                                    <InputField type="text" name="lastname" labelFor="lastname" label="Description" />
+                                    <InputField type="text" name="lastname" labelFor="lastname" label="Type your message" />
+                                    <div className="file-upload">
+                                        <div className="upload-item">
+                                            <sub>Insert File/s</sub>
+                                            <AttachmentIcon onClick={uploadItem} />
+                                            <input type="file" name="file" id="file" multiple onChange={updateList}  style={{ display: "none" }}/>
+                                        </div>
+                                    </div>
+                                    <div className="uploaded-items">
+                                        <div id="fileList"></div>
+                                    </div>
                                 </div>
                                 <Button />
                             </div>
